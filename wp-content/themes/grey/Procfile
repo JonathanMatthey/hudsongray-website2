@@ -1,0 +1,2 @@
+handlebars: php static-server.php
+sass: sass --watch _sass:css

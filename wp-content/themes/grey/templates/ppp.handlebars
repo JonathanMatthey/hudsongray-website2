@@ -1,0 +1,93 @@
+{{> site-header}}
+{{> site-navigation}}
+
+<script>
+$(function() {
+  // Trick to make Google Analytics track the PDF downloads
+  $('.ppp-buttons__item__btn').click(function (e) {
+    var _this = this;
+    _gaq.push(['_trackEvent','Download','PDF', this.href]);
+    setTimeout(function(){location.href=_this.href;},1000);
+    return false;
+  });
+});
+</script>
+
+<div id="ppp">
+  <!-- Header -->
+  <div class="block block--hero block--touch"
+       style="background-image: url('{{urls.images}}/ppp/ppp_hero_01_desktop.jpg');"
+       data-base="ppp/ppp_hero_01_"
+       data-default="ppp/ppp_hero_01_desktop"
+       data-palmLandscape="false"
+       data-ext=".jpg">
+
+    <div class="block__inner">
+      <h1 class="h1 block__title">
+        <span class="u-text-passion">Pixel</span><br/>Perfect<br/><span class="u-text-passion">Precision</span>
+      </h1>
+
+      <h5 class="index__desc u-margin-tL u-text-light">A comprehensive handbook on digital design covering much of our collective knowledge and process</h5>
+
+    </div>
+
+    <div class="block__triangle"></div>
+  </div>
+  <!-- /Header -->
+
+  <div class="block u-bg-passion">
+    <div class="block__inner ppp-inner">
+      <ul class="ppp-buttons">
+        <li class="ppp-buttons__item">
+          <a href="{{urls.cdn}}/PPP/PP3.pdf" class="ppp-buttons__item__btn">
+            <span class="ppp-buttons__item__btn__title">Download PDF</span>
+            <span class="ppp-buttons__item__btn__meta">(24MB)</span>
+          </a>
+        </li>
+        <li class="ppp-buttons__item">
+          <a href="{{urls.cdn}}/PPP/PP3.ibooks" class="ppp-buttons__item__btn">
+            <span class="ppp-buttons__item__btn__title">Download iBook</span>
+            <span class="ppp-buttons__item__btn__meta">(27MB)</span>
+          </a>
+        </li>
+        <li class="ppp-buttons__item">
+          <a href="{{urls.cdn}}/PPP/PP3_Extras.zip" class="ppp-buttons__item__btn ppp-buttons__item__btn--dark">
+            <span class="ppp-buttons__item__btn__title">Extras</span>
+            <span class="ppp-buttons__item__btn__meta">(scripts, etc., 0.5MB)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="block u-bg-paleGrey">
+    <div class="block__inner ppp-inner">
+      <div class="ppp-tweet">
+        <div class="ppp-tweet__icon">
+          <img src="{{urls.images}}/index/icn_twitter_@2x.png" alt="" width="84px">
+        </div>
+        <div class="ppp-tweet__quote">
+          <h5 class="ppp-tweet__quote__tweet">PPP is four years old today! Here’s one of the pages from its very first release, some familiar parts there… <a href="http://pic.twitter.com/imIcohHvkt">pic.twitter.com/imIcohHvkt</a></h5>
+
+          <h5>For the latest pixel perfect tips and tricks <a href="http://twitter.com/pppustwo" target="_blank">follow @pppustwo</a></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block__inner ppp-inner">
+      <h5>Check out what's new in <a class="u-link-passion--full" href="{{urls.site}}/blog/the-ustwo-pixel-perfect-precision-handbook-3/">The ustwo Pixel Perfect Precision Handbook 3</a> blog post… and if your first language is Japanese you may be interested in this <a class="u-link-passion--full" href="http://www.concentinc.jp/labs/2014/01/pixel-perfect-precision-handbook-2-japanese/">PPP 2 translation by Concent</a>.</h5>
+      <br />
+      <h5>If you're having trouble downloading the iBook file from the link above then try <a href="{{urls.cdn}}/PPP/PP3.ibooks.zip" class="u-link-passion--full">this zipped version</a>.</h5>
+
+      <img src="{{urls.images}}/ppp/ppp_screenshot_01.jpg" alt="" class="ppp-image">
+
+      <img src="{{urls.images}}/ppp/ppp_screenshot_02.jpg" alt="" class="ppp-image">
+
+      <img src="{{urls.images}}/ppp/ppp_screenshot_03.jpg" alt="" class="ppp-image">
+    </div>
+  </div>
+</div>
+
+{{> site-footer}}

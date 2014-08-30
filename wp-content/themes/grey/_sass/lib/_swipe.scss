@@ -1,0 +1,219 @@
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-controls__wrapper {
+  position: absolute;
+  right: 0;
+  bottom: -30px;;
+  width:300px;
+  height:70px;
+  z-index: 10;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+  @include grid-media-query('upToTablet') {
+    display: none;
+  }
+}
+
+
+.swipe-pagination {
+  @include clearfix;
+  display: none;
+  text-align: center;
+  padding: 0;
+  margin: 40px 0 0;
+
+  @include grid-media-query('upToTablet') {
+    display: block;
+  }
+}
+
+.swipe-pagination--twitter {
+  margin-bottom: 30px;
+}
+
+.swipe-pagination__item {
+  display: inline-block;
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  margin: 0 7px;
+  background: $nonBlack;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@each $colour in $colours {
+  $name: nth($colour, 1);
+  $hex: nth($colour, 2);
+
+  .swipe-pagination__item--#{$name} {
+    &.is-active,
+    &:hover {
+      cursor: pointer;
+      background: $hex;
+    }
+  }
+
+}
+
+.twitter-block .swipe-controls__wrapper {
+  top: 45%;
+}
+
+.swipe-controls {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.swipe-controls__item {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  text-indent: -1000px;
+  background:transparent;
+
+  &:hover {
+    &:before {
+      border-color: transparent transparent transparent #fff;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent #cccccc;
+  }
+}
+
+.swipe-controls__item--prev {
+  display:inline-block;
+  &:before {
+    top: 15px;
+    left: 28px;
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+.swipe-controls__item--next {
+  display:inline-block;
+
+  &:before {
+    top: 15px;
+    left: 0;
+  }
+}
+
+
+.tesco-phones {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  width: 65%;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 30;
+
+  @include grid-media-query('tablet') {
+    top: 48.5%;
+    width: 90%;
+  }
+
+  @include grid-media-query('palm') {
+    top: 35.7%;
+    width: 120%;
+  }
+}
+
+.sony-phones {
+  position: absolute;
+  top: 7.5%;
+  left: 50%;
+  width: 50%;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 30;
+
+  @include grid-media-query('tablet') {
+    top: 27%;
+    width: 70%;
+  }
+
+  @include grid-media-query('palm') {
+    top: 16.7%;
+    width: 90%;
+  }
+}
+
+.rando-phones {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  width: 50%;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 30;
+
+  @include grid-media-query('tablet') {
+    top: 16.75%;
+    width: 80%;
+  }
+
+  @include grid-media-query('palm') {
+    top: 24.5%;
+    width: 82%;
+  }
+}
+
+.slide-footer{
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(255,255,255,0.5);
+  padding:20px;
+  color:white;
+}

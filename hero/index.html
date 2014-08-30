@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>hero exp</title>
+
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <h1>HudsonGray</h1>
+
+  <div class="hero-img" style="background-image:url(img/1.jpg)"></div>
+  <div class="hero-img" style="background-image:url(img/2.jpg)"></div>
+  <div class="hero-img" style="background-image:url(img/3.jpg)"></div>
+  <div class="hero-img" style="background-image:url(img/4.jpg)"></div>
+  <div class="hero-img" style="background-image:url(img/5.jpg)"></div>
+
+<style>
+@-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 45% {
+   opacity:0;
+ }
+ 82% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+#cf4a {
+  position:relative;
+  height:90%;
+  width:100%;
+  margin:0 auto;
+}
+#cf4a img {
+  height:100%;
+  width:100%;
+  position:absolute;
+  left:0;
+}
+
+#cf4a img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 16s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 14s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 12s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 10s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 8s;
+}
+#cf4a img:nth-of-type(5) {
+  -webkit-animation-delay: 6s;
+}
+#cf4a img:nth-of-type(6) {
+  -webkit-animation-delay: 4s;
+}
+#cf4a img:nth-of-type(7) {
+  -webkit-animation-delay: 2s;
+}
+#cf4a img:nth-of-type(8) {
+  -webkit-animation-delay: 0;
+}
+#cf4a{
+  background-color:#333;
+}
+</style>
+<div id="cf4a" class="shadow">
+  <img src="img/4.jpg">
+  <img src="img/3.jpg">
+  <img src="img/2.jpg">
+  <img src="img/1.jpg">
+  <img src="img/2.jpg">
+  <img src="img/3.jpg">
+  <img src="img/4.jpg">
+  <img src="img/5.jpg">
+</div>
+  <div class="content" style="color:#333;position:relative;text-align:center;padding:2em 0 10em;">
+    <h2>content goes down here...</h2>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

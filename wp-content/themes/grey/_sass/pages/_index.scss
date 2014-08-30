@@ -1,0 +1,12 @@
+#index {
+}
+
+.homepage {
+  background: #EEE;
+}
+
+.index__desc {
+  @include grid-media-query('lap') {
+    width: 75%;
+  }
+}
