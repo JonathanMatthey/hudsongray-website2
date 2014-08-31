@@ -69,13 +69,14 @@
 }
 
 .our-capabilities{
+  background-image:url('../images/shared/diaglinepattern-50p.png');
 
   .block__inner{
     width:75%;
   }
 
   .capability-row{
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
     font-size: 0;
     padding: 40px 0;
 
@@ -142,6 +143,8 @@
       }
     }
   }
+}
 
 
+.our-thinking{
 }

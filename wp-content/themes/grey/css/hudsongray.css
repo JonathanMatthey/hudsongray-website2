@@ -5864,7 +5864,7 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   position: relative;
   z-index: 10;
   font-family: "UtopiaRegular", "Arial", sans-serif;
-  font-size: 26px;
+  font-size: 38px;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 30px;
@@ -5872,6 +5872,11 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   @media only screen and (max-width: 480px) {
     .section-title {
       font-size: 16px; } }
+
+.section-title.section-title--transparent {
+  background: transparent; }
+  .section-title.section-title--transparent span {
+    background: transparent; }
 
 .section-title--about .section-title__span {
   padding-top: 0; }
@@ -6150,46 +6155,48 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
   line-height: 30px; }
 
-.our-capabilities .block__inner {
-  width: 75%; }
-.our-capabilities .capability-row {
-  border-bottom: 1px solid #ccc;
-  font-size: 0;
-  padding: 40px 0; }
-  .our-capabilities .capability-row > div {
-    display: inline-block;
-    vertical-align: top;
-    width: 33.333%;
-    font-size: 14px; }
-    .our-capabilities .capability-row > div.capability-icon {
-      padding-right: 40px; }
-      .our-capabilities .capability-row > div.capability-icon i {
-        width: 90px;
-        height: 90px;
-        display: block;
-        margin-bottom: 10px;
-        background-size: cover; }
-      .our-capabilities .capability-row > div.capability-icon .icon-title {
-        font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
-        font-size: 24px;
-        text-transform: uppercase;
-        color: #999999; }
-    .our-capabilities .capability-row > div.capability-desc1 {
-      padding: 0 20px; }
-    .our-capabilities .capability-row > div.capability-desc2 {
-      padding: 0 0 0 40px; }
-  .our-capabilities .capability-row.strategy i {
-    background-image: url(../images/index/capabilities-strategy.png); }
-  .our-capabilities .capability-row.production i {
-    background-image: url(../images/index/capabilities-production.png); }
-  .our-capabilities .capability-row.creative i {
-    background-image: url(../images/index/capabilities-creative.png); }
-  .our-capabilities .capability-row.marketing i {
-    background-image: url(../images/index/capabilities-marketing.png); }
-  .our-capabilities .capability-row.digital-and-interactive i {
-    background-image: url(../images/index/capabilities-digital-and-interactive.png); }
-  .our-capabilities .capability-row.results i {
-    background-image: url(../images/index/capabilities-results.png); }
+.our-capabilities {
+  background-image: url("../images/shared/diaglinepattern-50p.png"); }
+  .our-capabilities .block__inner {
+    width: 75%; }
+  .our-capabilities .capability-row {
+    border-top: 1px solid #ccc;
+    font-size: 0;
+    padding: 40px 0; }
+    .our-capabilities .capability-row > div {
+      display: inline-block;
+      vertical-align: top;
+      width: 33.333%;
+      font-size: 14px; }
+      .our-capabilities .capability-row > div.capability-icon {
+        padding-right: 40px; }
+        .our-capabilities .capability-row > div.capability-icon i {
+          width: 90px;
+          height: 90px;
+          display: block;
+          margin-bottom: 10px;
+          background-size: cover; }
+        .our-capabilities .capability-row > div.capability-icon .icon-title {
+          font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
+          font-size: 24px;
+          text-transform: uppercase;
+          color: #999999; }
+      .our-capabilities .capability-row > div.capability-desc1 {
+        padding: 0 20px; }
+      .our-capabilities .capability-row > div.capability-desc2 {
+        padding: 0 0 0 40px; }
+    .our-capabilities .capability-row.strategy i {
+      background-image: url(../images/index/capabilities-strategy.png); }
+    .our-capabilities .capability-row.production i {
+      background-image: url(../images/index/capabilities-production.png); }
+    .our-capabilities .capability-row.creative i {
+      background-image: url(../images/index/capabilities-creative.png); }
+    .our-capabilities .capability-row.marketing i {
+      background-image: url(../images/index/capabilities-marketing.png); }
+    .our-capabilities .capability-row.digital-and-interactive i {
+      background-image: url(../images/index/capabilities-digital-and-interactive.png); }
+    .our-capabilities .capability-row.results i {
+      background-image: url(../images/index/capabilities-results.png); }
 
 #blog {
   background: #F4F4F4; }
