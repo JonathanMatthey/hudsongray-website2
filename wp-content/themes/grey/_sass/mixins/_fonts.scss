@@ -17,3 +17,13 @@
          url('fonts/ITCAvantGardeStd-Bold/itcavantgardestd-bold.ttf') format('truetype'),
          url('fonts/ITCAvantGardeStd-Bold/itcavantgardestd-bold.svg#ITCAvantGardeGothicStdBold') format('svg');
 }
+
+@font-face {
+    font-family: 'ITCAvantGardeStdBk';
+    src: url('fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.eot');
+    src: url('fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.eot') format('embedded-opentype'),
+         url('fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.woff2') format('woff2'),
+         url('fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.woff') format('woff'),
+         url('fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.ttf') format('truetype'),
+         url('fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.svg#ITCAvantGardeGothicStdBook') format('svg');
+}

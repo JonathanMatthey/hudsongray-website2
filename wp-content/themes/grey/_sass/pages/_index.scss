@@ -1,4 +1,12 @@
 #index {
+  .h1{
+  }
+}
+
+#index_hero{
+  .block__inner{
+    padding:0;
+  }
 }
 
 .homepage {
@@ -9,4 +17,131 @@
   @include grid-media-query('lap') {
     width: 75%;
   }
+}
+
+.whats-new{
+  .new-projects{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:30px;
+    li{
+      display:inline-block;
+      margin: 0 20px;
+      text-align:left;
+
+      &:nth-of-type(1){
+        .new-project-thumb{
+          background-image:url(http://g-ecx.images-amazon.com/images/S/abs-image-upload-na/a/ams/ATVPDKIKX0DER/3abd8f6e02d9a219b32d8180d8459c90.w996.h290._CR8,0,980,290_.jpg);
+        }
+      }
+      &:nth-of-type(2){
+        .new-project-thumb{
+          background-image:url(http://cookcountyrecord.com/wp-content/uploads/2014/03/hein.jpg);
+        }
+      }
+      &:nth-of-type(3){
+        .new-project-thumb{
+          background-image:url(https://www.playrific.com/images/media/Boxtroll-web.png);
+        }
+      }
+    }
+  }
+  .new-project{
+
+  }
+  .new-project-thumb{
+    background-color:#eee;
+    width:200px;
+    height:200px;
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+  }
+  .new-project-title{
+    color:rgb(153,153,153);
+    text-transform: uppercase;
+    font-family: $avantgardebook;
+    line-height:30px;
+  }
+}
+
+.our-capabilities{
+
+  .block__inner{
+    width:75%;
+  }
+
+  .capability-row{
+    border-bottom: 1px solid #ccc;
+    font-size: 0;
+    padding: 40px 0;
+
+    > div {
+      display: inline-block;
+      vertical-align: top;
+      width:33.333%;
+      font-size:14px;
+
+      &.capability-icon{
+        padding-right:40px;
+        i{
+          width:90px;
+          height:90px;
+          display: block;
+          margin-bottom:10px;
+          background-size:cover;
+        }
+        .icon-title{
+          font-family: $avantgardebook;
+          font-size:24px;
+          text-transform: uppercase;
+          color:rgb(153,153,153);
+        }
+      }
+
+      &.capability-desc1{
+        padding:0 20px;
+      }
+
+      &.capability-desc2{
+        padding:0 0 0 40px;
+      }
+    }
+
+    &.strategy{
+      i{
+        background-image:url(../images/index/capabilities-strategy.png);
+      }
+    }
+    &.production{
+      i{
+        background-image:url(../images/index/capabilities-production.png);
+      }
+    }
+    &.creative{
+      i{
+        background-image:url(../images/index/capabilities-creative.png);
+      }
+    }
+    &.marketing{
+      i{
+        background-image:url(../images/index/capabilities-marketing.png);
+      }
+    }
+    &.digital-and-interactive{
+      i{
+        background-image:url(../images/index/capabilities-digital-and-interactive.png);
+      }
+    }
+    &.results{
+      i{
+        background-image:url(../images/index/capabilities-results.png);
+      }
+    }
+  }
+
+
 }

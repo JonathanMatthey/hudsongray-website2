@@ -10,7 +10,7 @@
   }
 
   Blocks.prototype.initialize = function initialize() {
-    this.$blockTitles.fitText(0.9);
+    this.$blockTitles.fitText(1.1);
     return this;
   }
 

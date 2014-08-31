@@ -10,18 +10,19 @@
 
 .nav__logo {
   display: block;
-  float: left;
-  height: 68px;
-  width: 84px;
-  margin-left: 30px;
+  float: right;
+  height: 45px;
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 50px;
   overflow: hidden;
   text-indent: -1000px;
   background: url(../images/shared/logo@2x.png) center center no-repeat;
-  -webkit-background-size: 84px 24px;
-     -moz-background-size: 84px 24px;
-      -ms-background-size: 84px 24px;
-       -o-background-size: 84px 24px;
-          background-size: 84px 24px;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+      -ms-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
 }
 
 .nav__menu,
@@ -37,7 +38,7 @@
 
 .nav__menu__item {
   display: block;
-  font-family: $utopiaregular;
+  font-family: $avantgardebook;
   font-size: 16px;
   line-height: 24px;
   -webkit-transition: background linear 50ms;

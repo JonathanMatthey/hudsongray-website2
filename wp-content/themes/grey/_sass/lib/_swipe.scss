@@ -114,7 +114,7 @@
     height: 0;
     border-style: solid;
     border-width: 15px 0 15px 25px;
-    border-color: transparent transparent transparent #cccccc;
+    border-color: transparent transparent transparent #ddd;
   }
 }
 
@@ -210,10 +210,11 @@
 
 .slide-footer{
   position: absolute;
+  background-image:url('../images/shared/diaglinepattern-50p.png');
   bottom:0;
   left:0;
   right:0;
-  background-color:rgba(255,255,255,0.5);
+  // background-color:rgba(255,255,255,0.5);
   padding:20px;
   color:white;
 }

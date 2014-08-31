@@ -7,25 +7,10 @@
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 30px;
+  background-color:white;
 
   @include grid-media-query('palm') {
     font-size: 16px;
-  }
-
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 15px;
-    height: 2px;
-    background: $paleGrey;
-    -webkit-transform: translateX(-50%);
-       -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-         -o-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
 }
 
@@ -64,7 +49,18 @@
 
 .section-title__span {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 10px;
   background: #FFF;
   border-radius: 3px;
+  font-family:$avantgardebold;
+  color:rgb(128,128,128);
+}
+
+.forward-slashes{
+  color:rgb(204,204,204);
+  font-size: 34px;
+  line-height: 0px;
+  transform: translateY(2px);
+  display: inline-block;
+  letter-spacing: -7px;
 }

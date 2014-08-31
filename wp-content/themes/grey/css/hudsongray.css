@@ -21,6 +21,11 @@
   src: url("fonts/ITCAvantGardeStd-Bold/itcavantgardestd-bold.eot");
   src: url("fonts/ITCAvantGardeStd-Bold/itcavantgardestd-bold.eot") format("embedded-opentype"), url("fonts/ITCAvantGardeStd-Bold/itcavantgardestd-bold.woff2") format("woff2"), url("fonts/ITCAvantGardeStd-Bold/itcavantgardestd-bold.woff") format("woff"), url("fonts/ITCAvantGardeStd-Bold/itcavantgardestd-bold.ttf") format("truetype"), url("fonts/ITCAvantGardeStd-Bold/itcavantgardestd-bold.svg#ITCAvantGardeGothicStdBold") format("svg"); }
 
+@font-face {
+  font-family: 'ITCAvantGardeStdBk';
+  src: url("fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.eot");
+  src: url("fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.eot") format("embedded-opentype"), url("fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.woff2") format("woff2"), url("fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.woff") format("woff"), url("fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.ttf") format("truetype"), url("fonts/ITCAvantGardeStd-Bk/itcavantgardestd-bk.svg#ITCAvantGardeGothicStdBook") format("svg"); }
+
 .block--clear:after, .block__inner--text:after, .nav:after, .nav__menu:after,
 .nav__menu__contact__list:after, .social__links:after, .text-links:after, .blog-article__header__btns:after, .article__thumb .article__thumb__content .article__thumb__meta:after {
   content: "";
@@ -1501,7 +1506,7 @@ table {
     height: 0;
     border-style: solid;
     border-width: 15px 0 15px 25px;
-    border-color: transparent transparent transparent #cccccc; }
+    border-color: transparent transparent transparent #ddd; }
 
 .swipe-controls__item--prev {
   display: inline-block; }
@@ -1580,10 +1585,10 @@ table {
 
 .slide-footer {
   position: absolute;
+  background-image: url("../images/shared/diaglinepattern-50p.png");
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   color: white; }
 
@@ -3215,12 +3220,13 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-weight: normal; }
+  font-weight: normal;
+  font-family: "ITCAvantGardeGothicStdBold", "Helvetica", sans-serif; }
 
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  font-family: "UtopiaRegular", "Arial", sans-serif;
+  font-family: "ITCAvantGardeGothicStdBold", "Helvetica", sans-serif;
   text-transform: uppercase;
   line-height: 0.85em;
   width: 100%; }
@@ -3597,6 +3603,7 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 
 .block__inner,
 .footer__inner {
+  padding: 30px 0;
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
@@ -4329,18 +4336,19 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 
 .nav__logo {
   display: block;
-  float: left;
-  height: 68px;
-  width: 84px;
-  margin-left: 30px;
+  float: right;
+  height: 45px;
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 50px;
   overflow: hidden;
   text-indent: -1000px;
   background: url(../images/shared/logo@2x.png) center center no-repeat;
-  -webkit-background-size: 84px 24px;
-  -moz-background-size: 84px 24px;
-  -ms-background-size: 84px 24px;
-  -o-background-size: 84px 24px;
-  background-size: 84px 24px; }
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
 
 .nav__menu,
 .nav__menu__contact__list {
@@ -4353,7 +4361,7 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 
 .nav__menu__item {
   display: block;
-  font-family: "UtopiaRegular", "Arial", sans-serif;
+  font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 24px;
   -webkit-transition: background linear 50ms;
@@ -5572,8 +5580,12 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 .blog-article__pagination__link--new-york:first-child:before {
   color: #ed0082; }
 
+.about-us .block__inner {
+  padding: 100px 0;
+  max-width: 40%; }
 .about-us p {
-  color: #969696; }
+  color: #969696;
+  text-align: center; }
 
 .about-us__illustrations {
   margin: 50px -20px; }
@@ -5855,24 +5867,11 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   font-size: 26px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  background-color: white; }
   @media only screen and (max-width: 480px) {
     .section-title {
       font-size: 16px; } }
-  .section-title:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 15px;
-    height: 2px;
-    background: #dfdfdf;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%); }
 
 .section-title--about .section-title__span {
   padding-top: 0; }
@@ -5902,9 +5901,19 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 
 .section-title__span {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 10px;
   background: #FFF;
-  border-radius: 3px; }
+  border-radius: 3px;
+  font-family: "ITCAvantGardeGothicStdBold", "Helvetica", sans-serif;
+  color: gray; }
+
+.forward-slashes {
+  color: #cccccc;
+  font-size: 34px;
+  line-height: 0px;
+  transform: translateY(2px);
+  display: inline-block;
+  letter-spacing: -7px; }
 
 .twitter-block {
   background: #EAEAEA;
@@ -6101,12 +6110,86 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   .ppp-image:last-child {
     margin-bottom: 0; }
 
+#index_hero .block__inner {
+  padding: 0; }
+
 .homepage {
   background: #EEE; }
 
 @media only screen and (min-width: 769px) {
   .index__desc {
     width: 75%; } }
+
+.whats-new .new-projects {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px; }
+  .whats-new .new-projects li {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: left; }
+    .whats-new .new-projects li:nth-of-type(1) .new-project-thumb {
+      background-image: url(http://g-ecx.images-amazon.com/images/S/abs-image-upload-na/a/ams/ATVPDKIKX0DER/3abd8f6e02d9a219b32d8180d8459c90.w996.h290._CR8,0,980,290_.jpg); }
+    .whats-new .new-projects li:nth-of-type(2) .new-project-thumb {
+      background-image: url(http://cookcountyrecord.com/wp-content/uploads/2014/03/hein.jpg); }
+    .whats-new .new-projects li:nth-of-type(3) .new-project-thumb {
+      background-image: url(https://www.playrific.com/images/media/Boxtroll-web.png); }
+.whats-new .new-project-thumb {
+  background-color: #eee;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+.whats-new .new-project-title {
+  color: #999999;
+  text-transform: uppercase;
+  font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
+  line-height: 30px; }
+
+.our-capabilities .block__inner {
+  width: 75%; }
+.our-capabilities .capability-row {
+  border-bottom: 1px solid #ccc;
+  font-size: 0;
+  padding: 40px 0; }
+  .our-capabilities .capability-row > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.333%;
+    font-size: 14px; }
+    .our-capabilities .capability-row > div.capability-icon {
+      padding-right: 40px; }
+      .our-capabilities .capability-row > div.capability-icon i {
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin-bottom: 10px;
+        background-size: cover; }
+      .our-capabilities .capability-row > div.capability-icon .icon-title {
+        font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #999999; }
+    .our-capabilities .capability-row > div.capability-desc1 {
+      padding: 0 20px; }
+    .our-capabilities .capability-row > div.capability-desc2 {
+      padding: 0 0 0 40px; }
+  .our-capabilities .capability-row.strategy i {
+    background-image: url(../images/index/capabilities-strategy.png); }
+  .our-capabilities .capability-row.production i {
+    background-image: url(../images/index/capabilities-production.png); }
+  .our-capabilities .capability-row.creative i {
+    background-image: url(../images/index/capabilities-creative.png); }
+  .our-capabilities .capability-row.marketing i {
+    background-image: url(../images/index/capabilities-marketing.png); }
+  .our-capabilities .capability-row.digital-and-interactive i {
+    background-image: url(../images/index/capabilities-digital-and-interactive.png); }
+  .our-capabilities .capability-row.results i {
+    background-image: url(../images/index/capabilities-results.png); }
 
 #blog {
   background: #F4F4F4; }
