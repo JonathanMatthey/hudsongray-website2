@@ -1,3 +1,12 @@
 .git
 .DS_Store
-wp-content/themes/grey/.sass-cache/
+wp-content/themes/grey/.sass-cache/*
+wp-content/themes/grey/.sass-cache/1fd509bed6dcb5724ec0263fab576ea30418fc1a/_variables.scssc
+wp-content/themes/grey/.sass-cache/567f8650fdf2e16f9c35b0d0d6f10c52a8cb0d52/_fonts.scssc
+wp-content/themes/grey/.sass-cache/7b2f034cacc5ca24cf92af3a315b1d7e4a0cee6b/_typography.scssc
+wp-content/themes/grey/.sass-cache/856d931dd581847eb2c4b0d326bc63e59dd38f91/_index.scssc
+wp-content/themes/grey/.sass-cache/e78cdb94157e73e3d4928783a4332dd62dacc4e1/_swipe.scssc
+wp-content/themes/grey/.sass-cache/ea432b758738e3916c7a2774b352e1d72c9f0888/_about-us.scssc
+wp-content/themes/grey/.sass-cache/ea432b758738e3916c7a2774b352e1d72c9f0888/_block.scssc
+wp-content/themes/grey/.sass-cache/ea432b758738e3916c7a2774b352e1d72c9f0888/_navigation.scssc
+wp-content/themes/grey/.sass-cache/ea432b758738e3916c7a2774b352e1d72c9f0888/_section-title.scssc
