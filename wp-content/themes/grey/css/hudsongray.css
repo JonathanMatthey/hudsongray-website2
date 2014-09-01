@@ -32,7 +32,7 @@
   display: table;
   clear: both; }
 
-.block--triangle:after, .studios__item__details:after {
+.block--triangle:after {
   content: "";
   display: block;
   position: absolute;
@@ -500,7 +500,7 @@ table {
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.studios, .footer__copyright, .footer__contact {
+.footer__copyright, .footer__contact {
   list-style: none;
   /* [1] */
   margin: 0;
@@ -517,7 +517,7 @@ table {
  * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-.mosaic__image, .studios__item, .footer__copyright .h6, .footer__contact__item, .searchbox__search, .searchbox__categories, .blog__articles .blog__articles__item {
+.mosaic__image, .footer__copyright .h6, .footer__contact__item, .searchbox__search, .searchbox__categories, .blog__articles .blog__articles__item {
   display: inline-block;
   /* [1] */
   padding-left: 0px;
@@ -582,7 +582,7 @@ table {
 /**
  * Thirds
  */
-.mosaic__image--third, .studios__item, .searchbox__categories, .blog__articles .blog__articles__item {
+.mosaic__image--third, .searchbox__categories, .blog__articles .blog__articles__item {
   width: 33.333%; }
 
 .searchbox__search, .blog__articles .blog__articles__item--hero {
@@ -709,7 +709,7 @@ table {
   /**
    * Whole
    */
-  .studios__item, .blog__articles .blog__articles__item--hero {
+  .blog__articles .blog__articles__item--hero {
     width: 100%; }
 
   /**
@@ -2545,8 +2545,7 @@ table {
   .u-palm-margin-tL {
     margin-top: 40px; }
 
-  .jobs__item__link, .studios__item__details,
-  .studio__directions__btns {
+  .jobs__item__link {
     padding-top: 30px;
     padding-right: 30px;
     padding-left: 30px;
@@ -2716,8 +2715,7 @@ table {
   .u-tablet-margin-tL {
     margin-top: 40px; }
 
-  .jobs__item__link, .studios__item__details,
-  .studio__directions__btns {
+  .jobs__item__link {
     padding-top: 30px;
     padding-right: 30px;
     padding-left: 30px;
@@ -2884,8 +2882,7 @@ table {
   .u-lap-margin-tL {
     margin-top: 40px; }
 
-  .jobs__item__link, .studios__item__details,
-  .studio__directions__btns {
+  .jobs__item__link {
     padding-top: 30px;
     padding-right: 30px;
     padding-left: 30px;
@@ -2975,8 +2972,7 @@ table {
   .u-desk-margin-tXl {
     margin-top: 60px; }
 
-  .jobs__item__link, .studios__item__details,
-  .studio__directions__btns {
+  .jobs__item__link {
     padding-top: 40px;
     padding-right: 40px;
     padding-left: 40px;
@@ -3140,8 +3136,7 @@ table {
   .u-huge-margin-tXl {
     margin-top: 60px; }
 
-  .jobs__item__link, .studios__item__details,
-  .studio__directions__btns {
+  .jobs__item__link {
     padding-top: 40px;
     padding-right: 40px;
     padding-left: 40px;
@@ -4624,54 +4619,6 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     .jobs__item__link:hover {
       background: none; } }
 
-.studios__item__image {
-  overflow: hidden;
-  position: relative; }
-  .studios__item__image:before {
-    content: "";
-    display: block;
-    height: 0;
-    padding-top: 56.25%; }
-  .studios__item__image > img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%; }
-  .studios__item__image img {
-    display: block;
-    margin: 0; }
-
-.studios__item__details {
-  position: relative; }
-
-.studio__directions__map {
-  overflow: hidden;
-  position: relative; }
-  .studio__directions__map:before {
-    content: "";
-    display: block;
-    height: 0;
-    padding-top: 56.25%; }
-  .studio__directions__map > .scut-inner {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%; }
-  @media only screen and (min-width: 321px) and (max-width: 600px) {
-    .studio__directions__map {
-      overflow: hidden;
-      position: relative; }
-      .studio__directions__map:before {
-        content: "";
-        display: block;
-        height: 0;
-        padding-top: 31.25%; }
-      .studio__directions__map > .scut-inner {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%; } }
-
 .footer {
   color: #FFF;
   background: #252525; }
@@ -5580,13 +5527,6 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 .blog-article__pagination__link--new-york:first-child:before {
   color: #ed0082; }
 
-.about-us .block__inner {
-  padding: 100px 0;
-  max-width: 40%; }
-.about-us p {
-  color: #969696;
-  text-align: center; }
-
 .about-us__illustrations {
   margin: 50px -20px; }
   .about-us__illustrations:after {
@@ -6125,6 +6065,13 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   .index__desc {
     width: 75%; } }
 
+.about-us .block__inner {
+  padding: 50px 0;
+  max-width: 40%; }
+.about-us p {
+  color: #969696;
+  text-align: center; }
+
 .whats-new .new-projects {
   padding: 0;
   margin: 0;
@@ -6155,61 +6102,59 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
   line-height: 30px; }
 
-.our-capabilities {
-  background-image: url("../images/shared/diaglinepattern-50p.png"); }
-  .our-capabilities .block__inner {
-    width: 75%; }
-  .our-capabilities .capability-row {
-    border-top: 1px solid #ccc;
-    font-size: 0;
-    padding: 40px 0; }
+.our-capabilities .block__inner {
+  width: 75%; }
+.our-capabilities .capability-row {
+  border-top: 1px solid #ccc;
+  font-size: 0;
+  padding: 40px 0; }
+  .our-capabilities .capability-row > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.333%;
+    font-size: 14px; }
+    .our-capabilities .capability-row > div.capability-icon {
+      padding-right: 40px; }
+      .our-capabilities .capability-row > div.capability-icon i {
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin-bottom: 10px;
+        background-size: cover; }
+      .our-capabilities .capability-row > div.capability-icon .icon-title {
+        font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #999999; }
+    .our-capabilities .capability-row > div.capability-desc1 {
+      padding: 0 20px; }
+    .our-capabilities .capability-row > div.capability-desc2 {
+      padding: 0 0 0 40px; }
+  @media (max-width: 600px) {
     .our-capabilities .capability-row > div {
-      display: inline-block;
-      vertical-align: top;
-      width: 33.333%;
-      font-size: 14px; }
-      .our-capabilities .capability-row > div.capability-icon {
-        padding-right: 40px; }
-        .our-capabilities .capability-row > div.capability-icon i {
-          width: 90px;
-          height: 90px;
-          display: block;
-          margin-bottom: 10px;
-          background-size: cover; }
-        .our-capabilities .capability-row > div.capability-icon .icon-title {
-          font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
-          font-size: 24px;
-          text-transform: uppercase;
-          color: #999999; }
-      .our-capabilities .capability-row > div.capability-desc1 {
-        padding: 0 20px; }
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: left;
+      padding: 0 !important; }
+      .our-capabilities .capability-row > div.capability-icon i {
+        float: left;
+        margin-right: 20px; }
+      .our-capabilities .capability-row > div.capability-icon .icon-title {
+        float: left; }
       .our-capabilities .capability-row > div.capability-desc2 {
-        padding: 0 0 0 40px; }
-    @media (max-width: 600px) {
-      .our-capabilities .capability-row > div {
-        width: 100%;
-        margin-bottom: 20px;
-        text-align: left;
-        padding: 0 !important; }
-        .our-capabilities .capability-row > div.capability-icon i {
-          float: left;
-          margin-right: 20px; }
-        .our-capabilities .capability-row > div.capability-icon .icon-title {
-          float: left; }
-        .our-capabilities .capability-row > div.capability-desc2 {
-          margin-bottom: 0; } }
-    .our-capabilities .capability-row.strategy i {
-      background-image: url(../images/index/capabilities-strategy.png); }
-    .our-capabilities .capability-row.production i {
-      background-image: url(../images/index/capabilities-production.png); }
-    .our-capabilities .capability-row.creative i {
-      background-image: url(../images/index/capabilities-creative.png); }
-    .our-capabilities .capability-row.marketing i {
-      background-image: url(../images/index/capabilities-marketing.png); }
-    .our-capabilities .capability-row.digital-and-interactive i {
-      background-image: url(../images/index/capabilities-digital-and-interactive.png); }
-    .our-capabilities .capability-row.results i {
-      background-image: url(../images/index/capabilities-results.png); }
+        margin-bottom: 0; } }
+  .our-capabilities .capability-row.strategy i {
+    background-image: url(../images/index/capabilities-strategy.png); }
+  .our-capabilities .capability-row.production i {
+    background-image: url(../images/index/capabilities-production.png); }
+  .our-capabilities .capability-row.creative i {
+    background-image: url(../images/index/capabilities-creative.png); }
+  .our-capabilities .capability-row.marketing i {
+    background-image: url(../images/index/capabilities-marketing.png); }
+  .our-capabilities .capability-row.digital-and-interactive i {
+    background-image: url(../images/index/capabilities-digital-and-interactive.png); }
+  .our-capabilities .capability-row.results i {
+    background-image: url(../images/index/capabilities-results.png); }
 
 .our-thinking {
   padding-bottom: 10px; }
@@ -6217,6 +6162,40 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     text-align: center; }
   .our-thinking .block__inner {
     max-width: 60%; }
+
+.our-clients .our-clients-board {
+  background-image: url(../images/index/client-board.jpg);
+  width: 950px;
+  height: 400px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.u-bg-diag-grey {
+  background-image: url("../images/shared/diaglinepattern-50p.png"); }
+
+.our-offices .office__item {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+  height: 230px; }
+.our-offices .new-york .office__map {
+  background-image: url("../images/index/office-new-york.jpg"); }
+.our-offices .chicago .office__map {
+  background-image: url("../images/index/office-chicago.jpg"); }
+.our-offices .office__map {
+  width: 70%;
+  height: 100%;
+  background-color: #ccc;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat; }
+.our-offices .studios__item__details {
+  float: right;
+  background-color: white;
+  width: 260px;
+  height: 220px;
+  padding: 40px 20px; }
 
 #blog {
   background: #F4F4F4; }

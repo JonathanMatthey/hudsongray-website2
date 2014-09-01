@@ -1,14 +1,4 @@
-.about-us {
 
-  .block__inner{
-    padding: 100px 0;
-    max-width: 40%;
-  }
-  p {
-    color: #969696;
-    text-align: center;
-  }
-}
 
 .about-us__illustrations {
   @include clearfix;

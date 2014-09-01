@@ -19,6 +19,18 @@
   }
 }
 
+.about-us {
+
+  .block__inner{
+    padding: 50px 0;
+    max-width: 40%;
+  }
+  p {
+    color: #969696;
+    text-align: center;
+  }
+}
+
 .whats-new{
   .new-projects{
     padding: 0;
@@ -69,7 +81,6 @@
 }
 
 .our-capabilities{
-  background-image:url('../images/shared/diaglinepattern-50p.png');
 
   .block__inner{
     width:75%;
@@ -171,15 +182,58 @@
   }
 }
 
-
 .our-thinking{
   padding-bottom:10px;
-
   p{
     text-align: center;
   }
 
   .block__inner{
     max-width:60%;
+  }
+}
+
+.our-clients{
+  .our-clients-board{
+    background-image:url(../images/index/client-board.jpg);
+    width:950px;
+    height:400px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.u-bg-diag-grey{
+  background-image:url('../images/shared/diaglinepattern-50p.png');
+}
+
+.our-offices{
+  .office__item{
+    display: block;
+    margin-bottom:20px;
+    position: relative;
+    height:230px;
+  }
+  .new-york .office__map{
+    background-image:url('../images/index/office-new-york.jpg');
+  }
+  .chicago .office__map{
+    background-image:url('../images/index/office-chicago.jpg');
+  }
+  .office__map{
+    width:70%;
+    height:100%;
+    background-color:#ccc;
+    display: inline-block;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  .studios__item__details{
+    float:right;
+    background-color:white;
+    width:260px;
+    height:220px;
+    padding: 40px 20px;
   }
 }
