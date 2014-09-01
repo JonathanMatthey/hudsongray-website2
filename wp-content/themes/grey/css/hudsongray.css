@@ -3355,7 +3355,7 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     font-size: 24px; }
 
   p, .p, .blog-article__content ul li, .blog-article__content ol li {
-    font-size: 18px; }
+    font-size: 16px; }
 
   .p--address,
   .p--small {
@@ -3377,7 +3377,7 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     font-size: 24px; }
 
   p, .p, .blog-article__content ul li, .blog-article__content ol li {
-    font-size: 18px; }
+    font-size: 16px; }
 
   .p--address,
   .p--small {
@@ -6185,6 +6185,19 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
         padding: 0 20px; }
       .our-capabilities .capability-row > div.capability-desc2 {
         padding: 0 0 0 40px; }
+    @media (max-width: 600px) {
+      .our-capabilities .capability-row > div {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: left;
+        padding: 0 !important; }
+        .our-capabilities .capability-row > div.capability-icon i {
+          float: left;
+          margin-right: 20px; }
+        .our-capabilities .capability-row > div.capability-icon .icon-title {
+          float: left; }
+        .our-capabilities .capability-row > div.capability-desc2 {
+          margin-bottom: 0; } }
     .our-capabilities .capability-row.strategy i {
       background-image: url(../images/index/capabilities-strategy.png); }
     .our-capabilities .capability-row.production i {
@@ -6197,6 +6210,13 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
       background-image: url(../images/index/capabilities-digital-and-interactive.png); }
     .our-capabilities .capability-row.results i {
       background-image: url(../images/index/capabilities-results.png); }
+
+.our-thinking {
+  padding-bottom: 10px; }
+  .our-thinking p {
+    text-align: center; }
+  .our-thinking .block__inner {
+    max-width: 60%; }
 
 #blog {
   background: #F4F4F4; }

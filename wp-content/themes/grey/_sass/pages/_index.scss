@@ -88,6 +88,7 @@
 
       &.capability-icon{
         padding-right:40px;
+
         i{
           width:90px;
           height:90px;
@@ -95,6 +96,7 @@
           margin-bottom:10px;
           background-size:cover;
         }
+
         .icon-title{
           font-family: $avantgardebook;
           font-size:24px;
@@ -110,6 +112,30 @@
       &.capability-desc2{
         padding:0 0 0 40px;
       }
+    }
+
+
+    @media (max-width: 600px) {
+      > div {
+        width:100%;
+        margin-bottom:20px;
+        text-align:left;
+        padding:0!important;
+
+        &.capability-icon{
+          i{
+            float:left;
+            margin-right:20px;
+          }
+          .icon-title{
+            float:left;
+          }
+        }
+        &.capability-desc2{
+          margin-bottom:0;
+        }
+      }
+
     }
 
     &.strategy{
@@ -147,4 +173,13 @@
 
 
 .our-thinking{
+  padding-bottom:10px;
+
+  p{
+    text-align: center;
+  }
+
+  .block__inner{
+    max-width:60%;
+  }
 }
