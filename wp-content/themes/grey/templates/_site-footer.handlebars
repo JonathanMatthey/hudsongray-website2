@@ -1,67 +1,44 @@
+
 <footer class="footer">
-
-  <div class="footer__inner">
-    <!-- Contact Info -->
-    <ul class="footer__contact">
-      <!-- General -->
-      <li class="footer__contact__item">
-        <h5 class="h5 u-text-white u-margin-bS u-bar-after">General</h5>
-        <p class="p--address">
-          <a href="tel:+1(212)518-4900" class="telephone" data-studio="nyc">+1 (212) 123-4567</a>
-          <a href="tel:+44(0)2076130433" class="telephone" data-studio="london">+44 (0) 207 613 0433</a>
-          <a href="tel:+46(0)40330480" class="telephone" data-studio="malmo">+46 (0) 40 330 480</a>
-          <a class="u-link-honey--coloured u-link-block" href="mailto:hello@hudson-gray.com">hello@hudson-gray.com</a>
-          <a class="u-link-honey--coloured u-link-block" href="mailto:press@hudson-gray.com">press@hudson-gray.com</a>
-          <a class="u-link-honey--coloured u-link-block" href="mailto:work@hudson-gray.com">work@hudson-gray.com</a>
-        </p>
-
-        <ul class="social__links">
-          <li class="social__links__item">
-            <a href="" class="social__link social__link--facebook" target="_blank">Facebook</a>
-          </li>
-
-          <li class="social__links__item">
-            <a href="" class="social__link social__link--linkedin" target="_blank">LinkedIn</a>
-          </li>
-
-          <li class="social__links__item">
-            <a href="" class="social__link social__link--twitter" target="_blank">Twitter</a>
-          </li>
-        </ul>
-      </li><!--
-
-   --><!--
-
-   --><!--
-
-  -->
-    </ul>
-    <!-- /Contact Info -->
-
-    <!-- Copyright -->
-    <div class="footer__copyright">
-      <h6 class='h6 u-text-white'>Copyright &copy; 2014 hudson gray Ltd. All rights reserved.</h6>
+  <div class="footer_social-row u-bg-white">
+    <div class="footer_social">
+      <div class="">FEELING <strong>SOCIAL</strong></div>
+      <ul class="social__links">
+        <li class="social__links__item">
+          <a href="" class="social__link social__link--facebook" target="_blank">Facebook</a>
+        </li>
+        <li class="social__links__item">
+          <a href="" class="social__link social__link--linkedin" target="_blank">LinkedIn</a>
+        </li>
+        <li class="social__links__item">
+          <a href="" class="social__link social__link--twitter" target="_blank">Twitter</a>
+        </li>
+        <li class="social__links__item">
+          <a href="" class="social__link social__link--twitter" target="_blank">Vine</a>
+        </li>
+        <li class="social__links__item">
+          <a href="" class="social__link social__link--twitter" target="_blank">Google+</a>
+        </li>
+      </ul>
     </div>
-    <!-- /Copyright -->
+    <div class="footer_email">
+      <a href="" class="btn-email"></a>
+    </div>
   </div>
+  <div class="footer_logo">
+    <i></i>
+  </div>
+  <!-- /Contact Info -->
+  <!-- Copyright -->
+  <div class="footer__copyright">
+    <h6 class='h6 u-text-white'>Copyright &copy; 2014 hudson gray Ltd. All rights reserved.</h6>
+  </div>
+  <!-- /Copyright -->
 </footer>
 
 <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-7940378-1']);
-  _gaq.push(['_setDomainName', 'ustwo.com']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
 </script>
-    <!-- Include JS Libs -->
+<!-- Include JS Libs -->
 <script src="{{urls.js}}/lib/jquery.fitText.js"></script>
 <script src="{{urls.js}}/lib/jquery.response.js"></script>
 <script src="{{urls.js}}/lib/swipe.js"></script>
@@ -75,88 +52,96 @@
 
 <!-- Load independent page js -->
 
-  <script src="{{urls.js}}/hudsongray-searchbar-hider.js"></script>
+<script src="{{urls.js}}/hudsongray-searchbar-hider.js"></script>
 
-  <script src="{{urls.js}}/hudsongray-select-box.js"></script>
+<script src="{{urls.js}}/hudsongray-select-box.js"></script>
 
-  <script src="{{urls.js}}/hudsongray-search-box.js"></script>
+<script src="{{urls.js}}/hudsongray-search-box.js"></script>
 
-  <script src="{{urls.js}}/hudsongray-blog.js"></script>
+<script src="{{urls.js}}/hudsongray-blog.js"></script>
 
-  <script src="{{urls.js}}/hudsongray-blog-load-next.js"></script>
+<script src="{{urls.js}}/hudsongray-blog-load-next.js"></script>
 
 
 <!-- /Include Js -->
 
-    <script>
-      (function() {
+<script>
+  (function() {
 
-        $(document).ready(function () {
-          var ResponsiveImageSwitcher = new Ustwo.ResponsiveImageSwitcher('{{urls.images}}');
+    $(document).ready(function () {
+      var ResponsiveImageSwitcher = new Ustwo.ResponsiveImageSwitcher('{{urls.images}}');
 
-          var $nav = $(".nav");
-          var $body = $("body");
-          var navOffset;
-          $(window).scroll(function(e){
-          	navOffset = $nav.offset().top - $body.scrollTop() ;
+      var $nav = $(".nav");
+      var $body = $("body");
+      var navOffset;
+      $(window).scroll(function(e){
+       navOffset = $nav.offset().top - $body.scrollTop() ;
 
-          	if(navOffset < 10  ){
-          		$nav.addClass('fixed');
-          	} else{
-          		$nav.removeClass('fixed');
-          	}
+       if(navOffset < 10  ){
+          $nav.addClass('fixed');
+        } else{
+          $nav.removeClass('fixed');
+        }
 
-          });
-        });
+      });
 
-        window.workSwipe = Swipe(document.getElementById('work'), {
-          auto: 6000,
-          continuous: true,
-          callback: function(index, element){
-            var $els = $(".swipe-pagination--work .swipe-pagination__item");
-                $els.removeClass('is-active');
-                $($els[index]).addClass('is-active');
-          }
-        });
+      $(".nav .nav__menu__item a").click(function() {
+        var target = $(this).attr('href');
+        console.log(target);
+        $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 800);
+      });
+    });
 
-        $(".swipe-pagination--work .swipe-pagination__item").on('click', function(event) {
-          workSwipe.slide($(this).index(), 500);
-        });
+    window.workSwipe = Swipe(document.getElementById('work'), {
+      auto: 6000,
+      continuous: true,
+      callback: function(index, element){
+        var $els = $(".swipe-pagination--work .swipe-pagination__item");
+        $els.removeClass('is-active');
+        $($els[index]).addClass('is-active');
+      }
+    });
 
-        $('#work .swipe-controls__item--prev').bind('click', function(event) {
-          event.preventDefault();
-          workSwipe.prev();
-        });
+    $(".swipe-pagination--work .swipe-pagination__item").on('click', function(event) {
+      workSwipe.slide($(this).index(), 500);
+    });
 
-        $('#work .swipe-controls__item--next').bind('click', function(event) {
-          event.preventDefault();
-          workSwipe.next();
-        });
+    $('#work .swipe-controls__item--prev').bind('click', function(event) {
+      event.preventDefault();
+      workSwipe.prev();
+    });
 
-        window.twitterSwipe = Swipe(document.getElementById('twitter'), {
-          auto: 3000,
-          continuous: true,
-          callback: function(index, element){
-            var $els = $(".swipe-pagination--twitter .swipe-pagination__item");
-                $els.removeClass('is-active');
-                $($els[index]).addClass('is-active');
-          }
-        });
+    $('#work .swipe-controls__item--next').bind('click', function(event) {
+      event.preventDefault();
+      workSwipe.next();
+    });
 
-        $(".swipe-pagination--twitter .swipe-pagination__item").on('click', function(event) {
-          twitterSwipe.slide($(this).index(), 500);
-        });
+    window.twitterSwipe = Swipe(document.getElementById('twitter'), {
+      auto: 3000,
+      continuous: true,
+      callback: function(index, element){
+        var $els = $(".swipe-pagination--twitter .swipe-pagination__item");
+        $els.removeClass('is-active');
+        $($els[index]).addClass('is-active');
+      }
+    });
 
-        $('.twitter-block .swipe-controls__item--prev').bind('click', function(event) {
-          event.preventDefault();
-          twitterSwipe.prev();
-        });
+    $(".swipe-pagination--twitter .swipe-pagination__item").on('click', function(event) {
+      twitterSwipe.slide($(this).index(), 500);
+    });
 
-        $('.twitter-block .swipe-controls__item--next').bind('click', function(event) {
-          event.preventDefault();
-          twitterSwipe.next();
-        });
-      })();
-    </script>
-  </body>
+    $('.twitter-block .swipe-controls__item--prev').bind('click', function(event) {
+      event.preventDefault();
+      twitterSwipe.prev();
+    });
+
+    $('.twitter-block .swipe-controls__item--next').bind('click', function(event) {
+      event.preventDefault();
+      twitterSwipe.next();
+    });
+  })();
+</script>
+</body>
 </html>

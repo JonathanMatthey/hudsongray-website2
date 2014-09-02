@@ -20,7 +20,6 @@
 }
 
 .about-us {
-
   .block__inner{
     padding: 50px 0;
     max-width: 40%;
@@ -95,7 +94,7 @@
       display: inline-block;
       vertical-align: top;
       width:33.333%;
-      font-size:14px;
+      font-size:15px;
 
       &.capability-icon{
         padding-right:40px;
@@ -201,6 +200,7 @@
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom:50px;
   }
 }
 
@@ -213,7 +213,7 @@
     display: block;
     margin-bottom:20px;
     position: relative;
-    height:230px;
+    height:220px;
   }
   .new-york .office__map{
     background-image:url('../images/index/office-new-york.jpg');
@@ -222,7 +222,7 @@
     background-image:url('../images/index/office-chicago.jpg');
   }
   .office__map{
-    width:70%;
+    width:74%;
     height:100%;
     background-color:#ccc;
     display: inline-block;
@@ -234,6 +234,72 @@
     background-color:white;
     width:260px;
     height:220px;
-    padding: 40px 20px;
+    padding: 60px 30px;
+  }
+}
+
+.footer{
+  background-color:#eee;
+  padding-bottom:50px;
+  font-family:$avantgardebook;
+  color:rgb(217,217,217);
+  font-size:30px;
+
+  .footer_social-row{
+    text-align: center;
+    padding:10px 0;
+
+    > div{
+      display: inline-block;
+      padding: 0 30px;
+      vertical-align:top;
+      height:90px;
+    }
+  }
+  .footer_social{
+    .social__links{
+      margin:0;
+
+      strong{
+        font-family:$avantgardebold;
+      }
+
+      li{
+        margin: 0px 10px;
+      }
+    }
+    .social__links__item{
+      background:#333;
+    }
+  }
+  .footer_email{
+    border-left:1px solid #ccc;
+
+    .btn-email{
+      width:90px;
+      height:90px;
+      display: inline-block;
+      background-image:url('../images/index/btn-email.png');
+      background-size:cover;
+    }
+  }
+
+  .footer_logo{
+    text-align:center;
+    padding: 50px 0 ;
+    i{
+      background-image:url('../images/index/hudsongray-logo.png');
+      width:80px;
+      height:80px;
+      background-size:cover;
+      display: inline-block;
+    }
+  }
+  .footer__copyright{
+    border-top:1px solid #999;
+    padding:0;
+    h6{
+      padding: 10px 0;
+    }
   }
 }

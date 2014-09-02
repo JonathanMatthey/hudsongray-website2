@@ -67,14 +67,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, .h1,
 h2, .h2,
-h3, .h3 {
+h3, .h3,
+h4, .h4 {
   font-family: $avantgardebold;
   text-transform: uppercase;
   line-height: 0.85em;
   width: 100%;
 }
 
-h4, .h4,
 h5, .h5,
 h6, .h6,
 p, .p {
@@ -99,6 +99,11 @@ p, .p           { font-size: 16px; }
 .p--address {
   font-size: 14px;
   line-height: 1.4em;
+}
+
+.p--address{
+  font-family:$avantgardebook;
+  text-transform: uppercase;
 }
 
 // $PALMSMALL

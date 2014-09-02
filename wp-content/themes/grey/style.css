@@ -145,26 +145,6 @@ body.blog{
 	display:inline-block;
 }
 
-.london h4{
-	color:#16d6d9;
-}
-
-.malmo h4{
-	color:#ed0082;
-}
-
-.malmo .u-bar-after--mare:after{
-	background-color:#ed0082;
-}
-
-.new-york .u-bar-after--mare:after{
-	background:#ff5519;
-}
-
-.new-york h4{
-	color:#ff5519;
-}
-
 .vacancy h5{
 	font-weight:bold;
 }
