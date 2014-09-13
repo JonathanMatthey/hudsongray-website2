@@ -98,7 +98,9 @@
   position: relative;
   margin-right: 16px;
   border-radius:100%;
-  padding:5px;
+  background-color:#aaa;
+  background-image:url('../images/shared/diaglinepattern-50p.png');
+  padding:6px;
 }
 
 .social__link {
@@ -107,7 +109,7 @@
   height: 22px;
   background-size: 22px;
   line-height: 24px;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
 
   i{

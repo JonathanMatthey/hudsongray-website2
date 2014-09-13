@@ -4702,7 +4702,9 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   position: relative;
   margin-right: 16px;
   border-radius: 100%;
-  padding: 5px; }
+  background-color: #aaa;
+  background-image: url("../images/shared/diaglinepattern-50p.png");
+  padding: 6px; }
 
 .social__link {
   display: block;
@@ -4710,7 +4712,7 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   height: 22px;
   background-size: 22px;
   line-height: 24px;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center; }
   .social__link i {
     color: white; }
@@ -6125,10 +6127,25 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   background-color: #eee;
   width: 260px;
   height: 220px;
-  padding: 60px 30px;
+  padding: 45px 30px;
   -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
   -moz-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
-  box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3); }
+  box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+  color: #888;
+  overflow: hidden;
+  position: relative; }
+  .our-offices .studios__item__details::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background-color: #666;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    background-image: url("../images/shared/diaglinepattern-50p.png"); }
 
 .footer {
   background-color: #eee;
@@ -6143,14 +6160,16 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
       display: inline-block;
       padding: 10px 30px;
       vertical-align: middle; }
-      .footer .footer_social-row > div.footer_social .social__links {
-        margin: 0; }
-        .footer .footer_social-row > div.footer_social .social__links strong {
-          font-family: "ITCAvantGardeGothicStdBold", "Helvetica", sans-serif; }
-        .footer .footer_social-row > div.footer_social .social__links li {
-          margin: 0px 10px; }
-      .footer .footer_social-row > div.footer_social .social__links__item {
-        background: #aaa; }
+      .footer .footer_social-row > div.footer_social {
+        letter-spacing: -2px; }
+        .footer .footer_social-row > div.footer_social .social__links {
+          margin: 0; }
+          .footer .footer_social-row > div.footer_social .social__links strong {
+            font-family: "ITCAvantGardeGothicStdBold", "Helvetica", sans-serif; }
+          .footer .footer_social-row > div.footer_social .social__links li {
+            margin: 0px 6px; }
+            .footer .footer_social-row > div.footer_social .social__links li:hover {
+              background-color: #666; }
       .footer .footer_social-row > div.footer_email {
         border-left: 1px solid #ccc;
         padding: 10px 30px 0px; }

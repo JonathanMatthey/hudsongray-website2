@@ -247,10 +247,27 @@
     background-color:#eee;
     width:260px;
     height:220px;
-    padding: 60px 30px;
+    padding: 45px 30px;
     -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
     -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.3);
     box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+    color:#888;
+    overflow:hidden;
+    position: relative;
+
+    &::after{
+      content:"";
+      width:60px;
+      height:60px;
+      position: absolute;
+      top:-30px;
+      right:-30px;
+      background-color:#666;
+      transform:rotate(45deg);
+      -webkit-transform:rotate(45deg);
+      -moz-transform:rotate(45deg);
+      background-image:url('../images/shared/diaglinepattern-50p.png');
+    }
   }
 }
 
@@ -271,6 +288,8 @@
       vertical-align:middle;
 
       &.footer_social{
+        letter-spacing: -2px;
+
         .social__links{
           margin:0;
 
@@ -279,11 +298,13 @@
           }
 
           li{
-            margin: 0px 10px;
+            margin: 0px 6px;
+            &:hover{
+              background-color:#666;
+            }
           }
         }
         .social__links__item{
-          background:#aaa;
         }
       }
 
@@ -350,4 +371,7 @@
   padding-bottom:5px;
   color:#aaa;
   font-weight:bold;
+}
+
+.our-offices{
 }
