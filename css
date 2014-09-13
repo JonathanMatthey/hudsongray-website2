@@ -1,0 +1,21 @@
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - _sass
+
+Backtrace:
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:360:in `read'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:360:in `update_stylesheet'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/Users/ratciti/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - _sass"; }

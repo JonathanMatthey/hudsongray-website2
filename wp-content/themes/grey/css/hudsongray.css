@@ -3274,7 +3274,12 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 
 .p--address {
   font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 10px;
+  color: #aaa;
+  font-weight: bold;
+  line-height: 1.1em; }
 
 @media only screen and (max-width: 640px) {
   h5, .h5, .blog-article__content blockquote p, .twitter-block__tweet p {
@@ -3610,7 +3615,7 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 
 .block__inner,
 .footer__inner {
-  padding: 30px 0;
+  padding: 20px 0;
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
@@ -5716,10 +5721,10 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   position: relative;
   z-index: 10;
   font-family: "UtopiaRegular", "Arial", sans-serif;
-  font-size: 38px;
+  font-size: 32px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   background-color: white; }
   @media only screen and (max-width: 480px) {
     .section-title {
@@ -5734,11 +5739,11 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   padding-top: 0; }
 
 .section-title--clients {
-  padding-top: 40px;
+  padding-top: 0px;
   background: #F8F8F8; }
 
 .section-title--work {
-  padding-top: 40px; }
+  padding-top: 20px; }
   @media only screen and (max-width: 768px) {
     .section-title--work {
       padding-top: 40px;
@@ -5999,15 +6004,15 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     margin: 0 20px;
     text-align: left; }
     .whats-new .new-projects li:nth-of-type(1) .new-project-thumb {
-      background-image: url(http://g-ecx.images-amazon.com/images/S/abs-image-upload-na/a/ams/ATVPDKIKX0DER/3abd8f6e02d9a219b32d8180d8459c90.w996.h290._CR8,0,980,290_.jpg); }
+      background-image: url(../images/index/new-thumb1.png); }
     .whats-new .new-projects li:nth-of-type(2) .new-project-thumb {
-      background-image: url(http://cookcountyrecord.com/wp-content/uploads/2014/03/hein.jpg); }
+      background-image: url(../images/index/new-thumb2.png); }
     .whats-new .new-projects li:nth-of-type(3) .new-project-thumb {
-      background-image: url(https://www.playrific.com/images/media/Boxtroll-web.png); }
+      background-image: url(../images/index/new-thumb3.png); }
 .whats-new .new-project-thumb {
   background-color: #eee;
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 170px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -6042,7 +6047,11 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
         text-transform: uppercase;
         color: #999999; }
     .our-capabilities .capability-row > div.capability-desc1 {
-      padding: 0 20px; }
+      font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
+      padding: 0 20px;
+      font-size: 20px;
+      line-height: 24px;
+      color: #666; }
     .our-capabilities .capability-row > div.capability-desc2 {
       padding: 0 0 0 40px; }
   @media (max-width: 600px) {
@@ -6059,27 +6068,29 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
       .our-capabilities .capability-row > div.capability-desc2 {
         margin-bottom: 0; } }
   .our-capabilities .capability-row.strategy i {
-    background-image: url(../images/index/capabilities-strategy.png); }
+    background-image: url(../images/index/c1.png); }
   .our-capabilities .capability-row.production i {
-    background-image: url(../images/index/capabilities-production.png); }
+    background-image: url(../images/index/c2.png); }
   .our-capabilities .capability-row.creative i {
-    background-image: url(../images/index/capabilities-creative.png); }
+    background-image: url(../images/index/c3.png); }
   .our-capabilities .capability-row.marketing i {
-    background-image: url(../images/index/capabilities-marketing.png); }
+    background-image: url(../images/index/c4.png); }
   .our-capabilities .capability-row.digital-and-interactive i {
-    background-image: url(../images/index/capabilities-digital-and-interactive.png); }
+    background-image: url(../images/index/c5.png); }
   .our-capabilities .capability-row.results i {
-    background-image: url(../images/index/capabilities-results.png); }
+    background-image: url(../images/index/c6.png); }
 
 .our-thinking {
   padding-bottom: 10px; }
   .our-thinking p {
-    text-align: center; }
+    text-align: center;
+    line-height: 22px;
+    color: #888; }
   .our-thinking .block__inner {
     max-width: 60%; }
 
 .our-clients .our-clients-board {
-  background-image: url(../images/index/client-board.jpg);
+  background-image: url(../images/index/client-board.png);
   width: 950px;
   height: 400px;
   margin: 0 auto;
@@ -6105,13 +6116,19 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   background-color: #ccc;
   display: inline-block;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3); }
 .our-offices .studios__item__details {
   float: right;
-  background-color: white;
+  background-color: #eee;
   width: 260px;
   height: 220px;
-  padding: 60px 30px; }
+  padding: 60px 30px;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3); }
 
 .footer {
   background-color: #eee;
@@ -6171,6 +6188,14 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   background-image: url("../images/index/hg-logo.png");
   background-size: cover;
   display: inline-block; }
+
+.header-subtitle {
+  border-bottom: 1px solid #666;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 5px;
+  color: #aaa;
+  font-weight: bold; }
 
 #blog {
   background: #F4F4F4; }

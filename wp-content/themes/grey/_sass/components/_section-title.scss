@@ -3,10 +3,10 @@
   position: relative;
   z-index: 10;
   font-family: $utopiaregular;
-  font-size: 38px;
+  font-size: 32px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   background-color:white;
 
   @include grid-media-query('palm') {
@@ -26,12 +26,12 @@
 }
 
 .section-title--clients {
-  padding-top: 40px;
+  padding-top: 0px;
   background: #F8F8F8;
 }
 
 .section-title--work {
-  padding-top: 40px;
+  padding-top: 20px;
 
   @include grid-media-query('upToTablet') {
     padding-top: 40px;

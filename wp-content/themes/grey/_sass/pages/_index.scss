@@ -49,17 +49,17 @@
 
       &:nth-of-type(1){
         .new-project-thumb{
-          background-image:url(http://g-ecx.images-amazon.com/images/S/abs-image-upload-na/a/ams/ATVPDKIKX0DER/3abd8f6e02d9a219b32d8180d8459c90.w996.h290._CR8,0,980,290_.jpg);
+          background-image:url(../images/index/new-thumb1.png);
         }
       }
       &:nth-of-type(2){
         .new-project-thumb{
-          background-image:url(http://cookcountyrecord.com/wp-content/uploads/2014/03/hein.jpg);
+          background-image:url(../images/index/new-thumb2.png);
         }
       }
       &:nth-of-type(3){
         .new-project-thumb{
-          background-image:url(https://www.playrific.com/images/media/Boxtroll-web.png);
+          background-image:url(../images/index/new-thumb3.png);
         }
       }
     }
@@ -69,8 +69,8 @@
   }
   .new-project-thumb{
     background-color:#eee;
-    width:200px;
-    height:200px;
+    width:240px;
+    height:170px;
     background-size:cover;
     background-position: center center;
     background-repeat:no-repeat;
@@ -120,7 +120,11 @@
       }
 
       &.capability-desc1{
+        font-family: $avantgardebook;
         padding:0 20px;
+        font-size:20px;
+        line-height:24px;
+        color:#666;
       }
 
       &.capability-desc2{
@@ -154,32 +158,32 @@
 
     &.strategy{
       i{
-        background-image:url(../images/index/capabilities-strategy.png);
+        background-image:url(../images/index/c1.png);
       }
     }
     &.production{
       i{
-        background-image:url(../images/index/capabilities-production.png);
+        background-image:url(../images/index/c2.png);
       }
     }
     &.creative{
       i{
-        background-image:url(../images/index/capabilities-creative.png);
+        background-image:url(../images/index/c3.png);
       }
     }
     &.marketing{
       i{
-        background-image:url(../images/index/capabilities-marketing.png);
+        background-image:url(../images/index/c4.png);
       }
     }
     &.digital-and-interactive{
       i{
-        background-image:url(../images/index/capabilities-digital-and-interactive.png);
+        background-image:url(../images/index/c5.png);
       }
     }
     &.results{
       i{
-        background-image:url(../images/index/capabilities-results.png);
+        background-image:url(../images/index/c6.png);
       }
     }
   }
@@ -189,6 +193,8 @@
   padding-bottom:10px;
   p{
     text-align: center;
+    line-height:22px;
+    color:#888;
   }
 
   .block__inner{
@@ -198,7 +204,7 @@
 
 .our-clients{
   .our-clients-board{
-    background-image:url(../images/index/client-board.jpg);
+    background-image:url(../images/index/client-board.png);
     width:950px;
     height:400px;
     margin: 0 auto;
@@ -232,13 +238,19 @@
     display: inline-block;
     background-size:cover;
     background-repeat: no-repeat;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.3);
   }
   .studios__item__details{
     float:right;
-    background-color:white;
+    background-color:#eee;
     width:260px;
     height:220px;
     padding: 60px 30px;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.3);
   }
 }
 
@@ -329,4 +341,13 @@
   background-image:url('../images/index/hg-logo.png');
   background-size:cover;
   display: inline-block;
+}
+
+.header-subtitle{
+  border-bottom:1px solid #666;
+  text-align:center;
+  margin-bottom:50px;
+  padding-bottom:5px;
+  color:#aaa;
+  font-weight:bold;
 }
