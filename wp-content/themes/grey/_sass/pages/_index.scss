@@ -22,12 +22,16 @@
 .about-us {
   .block__inner{
     padding: 50px 0;
-    max-width: 40%;
+    max-width: 43%;
   }
   p {
-    color: #969696;
+    color: rgb(115,115,115);
     text-align: center;
   }
+}
+
+.font-light{
+  font-family:$avantgardebook!important;
 }
 
 .whats-new{
@@ -290,11 +294,8 @@
     text-align:center;
     padding: 50px 0 ;
     i{
-      background-image:url('../images/index/hudsongray-logo.png');
       width:80px;
       height:80px;
-      background-size:cover;
-      display: inline-block;
     }
   }
   .footer__copyright{
@@ -302,9 +303,30 @@
     padding:0;
 
     h6{
-
       font-family: $avantgardebook;
       padding: 10px 0;
     }
   }
+}
+
+.about-us{
+  p{
+    text-align:left;
+    line-height: 1.5em;
+  }
+  .hg-logo{
+    float:left;
+    width:95px;
+    height:95px;
+    margin-right: 20px;
+  }
+  .hg-name{
+    font-size:20px;
+  }
+}
+
+.hg-logo{
+  background-image:url('../images/index/hg-logo.png');
+  background-size:cover;
+  display: inline-block;
 }
