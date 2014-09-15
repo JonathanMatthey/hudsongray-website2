@@ -61,13 +61,16 @@
   border-radius: 3px;
   font-family:$avantgardebold;
   color:rgb(128,128,128);
+  font-weight:normal;
 }
 
 .forward-slashes{
-  color:rgb(204,204,204);
-  font-size: 34px;
+  color: #cccccc;
+  font-size: 38px;
   line-height: 0px;
   transform: translateY(2px);
   display: inline-block;
   letter-spacing: -7px;
+  margin-right: 3px;
+
 }

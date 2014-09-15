@@ -33,9 +33,9 @@
     border-top: 5px solid #FFF;
     border-left: 5px solid #FFF;
     -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   &:hover {
@@ -108,9 +108,9 @@
   width: 22px;
   height: 22px;
   background-size: 22px;
-  line-height: 24px;
-  font-size: 20px;
   text-align: center;
+  line-height: 28px;
+  font-size: 20px;
 
   i{
     color:white;
@@ -121,7 +121,7 @@
   }
 
   @media (-webkit-min-device-pixel-ratio: 1.25),
-         (min-resolution: 120dppx) {
+  (min-resolution: 120dppx) {
     background-size: 22px;
   }
 }

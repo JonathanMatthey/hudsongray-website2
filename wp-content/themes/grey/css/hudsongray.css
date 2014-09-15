@@ -4711,9 +4711,9 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   width: 22px;
   height: 22px;
   background-size: 22px;
-  line-height: 24px;
-  font-size: 20px;
-  text-align: center; }
+  text-align: center;
+  line-height: 28px;
+  font-size: 20px; }
   .social__link i {
     color: white; }
   .social__link:hover {
@@ -5769,15 +5769,17 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   background: #FFF;
   border-radius: 3px;
   font-family: "ITCAvantGardeGothicStdBold", "Helvetica", sans-serif;
-  color: gray; }
+  color: gray;
+  font-weight: normal; }
 
 .forward-slashes {
   color: #cccccc;
-  font-size: 34px;
+  font-size: 38px;
   line-height: 0px;
   transform: translateY(2px);
   display: inline-block;
-  letter-spacing: -7px; }
+  letter-spacing: -7px;
+  margin-right: 3px; }
 
 .twitter-block {
   background: #EAEAEA;
@@ -5986,10 +5988,21 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 
 .about-us .block__inner {
   padding: 50px 0;
-  max-width: 43%; }
+  max-width: 40%; }
 .about-us p {
   color: #737373;
-  text-align: center; }
+  text-align: center;
+  font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
+  text-align: left;
+  line-height: 1.6em;
+  font-size: 15px; }
+.about-us .hg-logo {
+  float: left;
+  width: 95px;
+  height: 95px;
+  margin-right: 20px; }
+.about-us .hg-name {
+  font-size: 24px; }
 
 .font-light {
   font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif !important; }
@@ -6027,35 +6040,44 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 .our-capabilities .block__inner {
   width: 75%; }
 .our-capabilities .capability-row {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #888;
   font-size: 0;
-  padding: 40px 0; }
+  padding: 40px 0 25px 0; }
+  .our-capabilities .capability-row > div:nth-of-type(1) {
+    width: 19%;
+    margin-right: 8%; }
+  .our-capabilities .capability-row > div:nth-of-type(2) {
+    width: 35%;
+    margin-right: 8%; }
+  .our-capabilities .capability-row > div:nth-of-type(3) {
+    width: 30%; }
   .our-capabilities .capability-row > div {
     display: inline-block;
     vertical-align: top;
-    width: 33.333%;
     font-size: 15px; }
     .our-capabilities .capability-row > div.capability-icon {
       padding-right: 40px; }
       .our-capabilities .capability-row > div.capability-icon i {
-        width: 90px;
-        height: 90px;
+        width: 83px;
+        height: 83px;
         display: block;
         margin-bottom: 10px;
         background-size: cover; }
       .our-capabilities .capability-row > div.capability-icon .icon-title {
         font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
-        font-size: 24px;
+        font-size: 28px;
         text-transform: uppercase;
         color: #999999; }
     .our-capabilities .capability-row > div.capability-desc1 {
       font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
       padding: 0 20px;
-      font-size: 20px;
-      line-height: 24px;
+      font-size: 22px;
+      line-height: 30px;
       color: #666; }
     .our-capabilities .capability-row > div.capability-desc2 {
-      padding: 0 0 0 40px; }
+      padding: 0 0 0 40px;
+      font-size: 13px;
+      color: #7b7b7b; }
   @media (max-width: 600px) {
     .our-capabilities .capability-row > div {
       width: 100%;
@@ -6072,9 +6094,9 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   .our-capabilities .capability-row.strategy i {
     background-image: url(../images/index/c1.png); }
   .our-capabilities .capability-row.production i {
-    background-image: url(../images/index/c2.png); }
-  .our-capabilities .capability-row.creative i {
     background-image: url(../images/index/c3.png); }
+  .our-capabilities .capability-row.creative i {
+    background-image: url(../images/index/c2.png); }
   .our-capabilities .capability-row.marketing i {
     background-image: url(../images/index/c4.png); }
   .our-capabilities .capability-row.digital-and-interactive i {
@@ -6093,7 +6115,7 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 
 .our-clients .our-clients-board {
   background-image: url(../images/index/client-board.png);
-  width: 950px;
+  width: 1070px;
   height: 400px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -6112,6 +6134,21 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   background-image: url("../images/index/office-new-york.jpg"); }
 .our-offices .chicago .office__map {
   background-image: url("../images/index/office-chicago.jpg"); }
+.our-offices .hg-marker {
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/shared/hg-marker.png");
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+.our-offices .new-york .office__map .hg-marker {
+  top: 56px;
+  left: 346px; }
+.our-offices .chicago .office__map .hg-marker {
+  top: 92px;
+  left: 381px; }
 .our-offices .office__map {
   width: 74%;
   height: 100%;
@@ -6160,16 +6197,15 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
       display: inline-block;
       padding: 10px 30px;
       vertical-align: middle; }
-      .footer .footer_social-row > div.footer_social {
-        letter-spacing: -2px; }
-        .footer .footer_social-row > div.footer_social .social__links {
-          margin: 0; }
-          .footer .footer_social-row > div.footer_social .social__links strong {
-            font-family: "ITCAvantGardeGothicStdBold", "Helvetica", sans-serif; }
-          .footer .footer_social-row > div.footer_social .social__links li {
-            margin: 0px 6px; }
-            .footer .footer_social-row > div.footer_social .social__links li:hover {
-              background-color: #666; }
+      .footer .footer_social-row > div.footer_social strong {
+        font-family: "ITCAvantGardeGothicStdBold", "Helvetica", sans-serif;
+        font-weight: normal; }
+      .footer .footer_social-row > div.footer_social .social__links {
+        margin: 0; }
+        .footer .footer_social-row > div.footer_social .social__links li {
+          margin: 0px 8px; }
+          .footer .footer_social-row > div.footer_social .social__links li:hover {
+            background-color: #666; }
       .footer .footer_social-row > div.footer_email {
         border-left: 1px solid #ccc;
         padding: 10px 30px 0px; }
@@ -6191,17 +6227,6 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     .footer .footer__copyright h6 {
       font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
       padding: 10px 0; }
-
-.about-us p {
-  text-align: left;
-  line-height: 1.5em; }
-.about-us .hg-logo {
-  float: left;
-  width: 95px;
-  height: 95px;
-  margin-right: 20px; }
-.about-us .hg-name {
-  font-size: 20px; }
 
 .hg-logo {
   background-image: url("../images/index/hg-logo.png");

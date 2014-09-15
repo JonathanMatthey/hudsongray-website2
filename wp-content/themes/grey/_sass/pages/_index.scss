@@ -22,11 +22,24 @@
 .about-us {
   .block__inner{
     padding: 50px 0;
-    max-width: 43%;
+    max-width: 40%;
   }
   p {
     color: rgb(115,115,115);
     text-align: center;
+    font-family:$avantgardebook;
+    text-align:left;
+    line-height: 1.6em;
+    font-size:15px;
+  }
+  .hg-logo{
+    float:left;
+    width:95px;
+    height:95px;
+    margin-right: 20px;
+  }
+  .hg-name{
+    font-size:24px;
   }
 }
 
@@ -90,22 +103,33 @@
   }
 
   .capability-row{
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #888;
     font-size: 0;
-    padding: 40px 0;
+    padding: 40px 0 25px 0;
+
+    > div:nth-of-type(1){
+      width:19%;
+      margin-right:8%;
+    }
+    > div:nth-of-type(2){
+      width:35%;
+      margin-right:8%;
+    }
+    > div:nth-of-type(3){
+      width:30%;
+    }
 
     > div {
       display: inline-block;
       vertical-align: top;
-      width:33.333%;
       font-size:15px;
 
       &.capability-icon{
         padding-right:40px;
 
         i{
-          width:90px;
-          height:90px;
+          width:83px;
+          height:83px;
           display: block;
           margin-bottom:10px;
           background-size:cover;
@@ -113,7 +137,7 @@
 
         .icon-title{
           font-family: $avantgardebook;
-          font-size:24px;
+          font-size:28px;
           text-transform: uppercase;
           color:rgb(153,153,153);
         }
@@ -122,13 +146,15 @@
       &.capability-desc1{
         font-family: $avantgardebook;
         padding:0 20px;
-        font-size:20px;
-        line-height:24px;
+        font-size:22px;
+        line-height:30px;
         color:#666;
       }
 
       &.capability-desc2{
         padding:0 0 0 40px;
+        font-size:13px;
+        color:rgb(123,123,123);
       }
     }
 
@@ -163,12 +189,12 @@
     }
     &.production{
       i{
-        background-image:url(../images/index/c2.png);
+        background-image:url(../images/index/c3.png);
       }
     }
     &.creative{
       i{
-        background-image:url(../images/index/c3.png);
+        background-image:url(../images/index/c2.png);
       }
     }
     &.marketing{
@@ -205,7 +231,7 @@
 .our-clients{
   .our-clients-board{
     background-image:url(../images/index/client-board.png);
-    width:950px;
+    width:1070px;
     height:400px;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -230,6 +256,24 @@
   }
   .chicago .office__map{
     background-image:url('../images/index/office-chicago.jpg');
+  }
+  .hg-marker{
+    width:70px;
+    height:70px;
+    background-image:url('../images/shared/hg-marker.png');
+    position: absolute;
+    top:10px;
+    left:10px;
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+  .new-york .office__map .hg-marker{
+    top: 56px;
+    left: 346px;
+  }
+  .chicago .office__map .hg-marker{
+    top: 92px;
+    left: 381px;
   }
   .office__map{
     width:74%;
@@ -288,17 +332,17 @@
       vertical-align:middle;
 
       &.footer_social{
-        letter-spacing: -2px;
+
+        strong{
+          font-family:$avantgardebold;
+          font-weight:normal;
+        }
 
         .social__links{
           margin:0;
 
-          strong{
-            font-family:$avantgardebold;
-          }
-
           li{
-            margin: 0px 6px;
+            margin: 0px 8px;
             &:hover{
               background-color:#666;
             }
@@ -342,21 +386,6 @@
   }
 }
 
-.about-us{
-  p{
-    text-align:left;
-    line-height: 1.5em;
-  }
-  .hg-logo{
-    float:left;
-    width:95px;
-    height:95px;
-    margin-right: 20px;
-  }
-  .hg-name{
-    font-size:20px;
-  }
-}
 
 .hg-logo{
   background-image:url('../images/index/hg-logo.png');
