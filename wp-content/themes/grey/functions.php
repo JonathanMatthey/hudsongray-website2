@@ -645,18 +645,18 @@ if ( function_exists( 'wp_generator' ) ) {
 
 // auto generate meta desc for single posts
 function gen_meta_desc() {
-global $post;
+  global $post;
 
-if (!is_single()) {
-    return;
-}
+  if (!is_single()) {
+      return;
+  }
 
-//print_r($post);
-$meta = strip_tags($post->post_content);
-$meta = str_replace(array("\n", "\r", "\t"), ' ', $meta);
-$meta = substr($meta, 0, 125);
+  //print_r($post);
+  $meta = strip_tags($post->post_content);
+  $meta = str_replace(array("\n", "\r", "\t"), ' ', $meta);
+  $meta = substr($meta, 0, 125);
 
-echo "<meta name='description' content='$meta' />";
+  echo "<meta name='description' content='$meta' />";
 }
 
 add_action('wp_head', 'gen_meta_desc');

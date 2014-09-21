@@ -1,0 +1,176 @@
+{{> site-header}}
+{{> site-navigation}}
+
+<script>
+  $(function() {
+
+  });
+</script>
+
+<div id="case-study" class="case-study-{{pageId}}">
+  <!-- Header -->
+
+  <div id='work' class='swipe'>
+    <div class='swipe-wrap'>
+
+      {{#if isCS1}}
+      <div>
+        <!-- usa network -->
+        <div class="block block--slide-ratio"style="background-image: url('{{urls.images}}/index/work_usa1_desktop.jpg');">
+        </div>
+
+        <div class="slide-footer">
+          <h3 class="h3">USA Network <span class="font-light"> // satisfaction // a cultural dialogue</span></h3>
+        </div>
+        <!-- /usa network -->
+      </div>
+      {{/if}}
+
+      {{#if isCS2}}
+      <div>
+        <!-- Town and Country -->
+        <div class="block block--slide-ratio" style="background-image: url('{{urls.images}}/index/work_loreal_desktop.jpg');">
+        </div>
+
+        <div class="slide-footer">
+          <h3 class="h3">Town and Country <span class="font-light"> // NY Fashion Week // Atelier Pop Up</span></h3>
+        </div>
+        <!-- /Town and Country -->
+      </div>
+      {{/if}}
+
+      {{#if isCS3}}
+      <div>
+        <!-- usa chacter -->
+        <div class="block block--slide-ratio"style="background-image: url('{{urls.images}}/index/work_usa2_desktop.jpg');">
+        </div>
+
+        <div class="slide-footer">
+          <h3 class="h3">USA Network <span class="font-light"> // characters unite // college tour</span></h3>
+        </div>
+        <!-- /Town and Country -->
+      </div>
+      {{/if}}
+    </div>
+  {{!-- <div class="swipe-controls__wrapper">
+          <div class="swipe-controls">
+            <button class="swipe-controls__item swipe-controls__item--prev">Left</button>
+            <button class="swipe-controls__item swipe-controls__item--next">Right</button>
+          </div>
+        </div> --}}
+      </div>
+
+      <!-- Our about-project -->
+      <div id="about-project" class="block block--touch about-project u-bg-white">
+        <div class="block__inner ">
+          <div class="section-title section-title--transparent">
+            <span class="forward-slashes">//</span><span class="section-title__span">About Project</span><span class="forward-slashes">//</span>
+          </div>
+
+        </div>
+      </div>
+      <div id="about-project" class="block block--touch about-project u-bg-palegrey">
+        <div class="block__inner block__inner--about-project">
+          <div class="about-img">
+            {{#if isCS1}}
+            <img src="{{urls.images}}/case-study/cs1-about-img.jpg"/>
+            {{/if}}
+            {{#if isCS2}}
+            <img src="{{urls.images}}/case-study/cs2-about-img.jpg"/>
+            {{/if}}
+            {{#if isCS3}}
+            <img src="{{urls.images}}/case-study/cs3-about-img.jpg"/>
+            {{/if}}
+          </div>
+          <div class="about-desc">
+
+            {{#if isCS1}}
+            <h4>Objective</h4>
+            <p class="first">
+              Spark a cultural dialogue around
+              the provocative question: #AreYouSatisfied
+            </p>
+            <h4>Strategy</h4>
+            <p>
+              The tactics of the campaign truly blurred the lines
+              between promotion and editorial and inspired
+              debate and dialogue around the bold themes
+              explored in “Satisfaction”. Screenings and panel
+              discussions with top experts were staged in NYC,
+              Chicago and San Francisco.
+            </p>
+            {{/if}}
+            {{#if isCS2}}
+            <h4>Objective</h4>
+            <p class="first">
+              Engage fashion savvy fans, critics, designers
+              and style conscious consumers.
+            </p>
+            <h4>Strategy</h4>
+            <p>
+              Cultivate a social environment and build a brand
+              presence during New York Fashion Week. Create
+              the Town and Country Atelier merging beauty with
+              editorial and target consumers with highly shareable
+              content via social channels.
+            </p>
+            {{/if}}
+            {{#if isCS3}}
+            <h4>Objective</h4>
+            <p class="first">
+              Inspire a social movement for Characters
+              Unite, USA Network’s award winning public
+              service campaign.
+            </p>
+            <h4>Strategy</h4>
+            <p>
+              Address the social injustices and cultural
+              divides still prevalent in our country with
+              activities and messaging that combat prejudice
+              and intolerance while promoting understanding
+              and acceptance — on-air, online, and in
+              communities across the country.
+            </p>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+      <!-- /Our about-project -->
+
+      <!-- Our about-project -->
+      <div id="results" class="block block--touch about-results u-bg-diag-grey">
+        <div class="block__inner block__inner--results">
+          <div class="section-title section-title--transparent section-title--results">
+            <span class="section-title__span">Results</span>
+          </div>
+          <div class="block__inner">
+            <div class="results">
+
+              {{#if isCS1}}
+              <div class="result3">
+                <img src="{{urls.images}}/case-study/result-a.png" />
+              </div>
+              {{/if}}
+              {{#if isCS2}}
+              <div class="col-50 result2">
+                <img src="{{urls.images}}/case-study/result-b.png" />
+              </div>
+              <div class="col-50 result2">
+                <img src="{{urls.images}}/case-study/result-c.png" />
+              </div>
+              {{/if}}
+              {{#if isCS3}}
+              <div class="result3">
+                <img src="{{urls.images}}/case-study/result-d.png" />
+              </div>
+              {{/if}}
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- /Our about-project -->
+
+    </div>
+
+    {{> site-footer}}

@@ -87,6 +87,7 @@
     text-align: center;
     margin-top:10px;
     margin-bottom:30px;
+
     li{
       display:inline-block;
       margin: 0 20px;
@@ -110,7 +111,11 @@
     }
   }
   .new-project{
+    display: block;
 
+    &:hover .new-project-title{
+      text-decoration:underline;
+    }
   }
   .new-project-thumb{
     background-color:#eee;

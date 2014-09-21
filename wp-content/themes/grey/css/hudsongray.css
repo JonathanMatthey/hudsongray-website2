@@ -3611,6 +3611,10 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     .block__inner,
     .footer__inner {
       max-width: 1020px; } }
+  @media only screen and (max-width: 1280px) {
+    .block__inner,
+    .footer__inner {
+      max-width: 90%; } }
   @media only screen and (min-width: 1280px) {
     .block__inner,
     .footer__inner {
@@ -4641,7 +4645,6 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     background: #353535; }
 
 .footer__copyright {
-  max-width: 1280px;
   margin: 0 auto; }
   .footer__copyright .h6 {
     color: #686868; }
@@ -5937,6 +5940,55 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   .ppp-image:last-child {
     margin-bottom: 0; }
 
+#case-study .section-title {
+  padding-bottom: 0; }
+  #case-study .section-title .section-title__span {
+    padding: 10px 10px 0 10px; }
+#case-study .block__inner--about-project {
+  padding: 50px 0; }
+  #case-study .block__inner--about-project > div {
+    display: inline-block;
+    vertical-align: top;
+    color: #888; }
+#case-study .about-img {
+  width: 69%;
+  border-right: 1px solid #666;
+  padding-right: 10px; }
+  #case-study .about-img img {
+    width: 100%; }
+#case-study .about-desc {
+  width: 30%;
+  padding: 10px;
+  font-family: "UtopiaRegular", "Arial", sans-serif; }
+  #case-study .about-desc h4 {
+    font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
+    padding-bottom: 20px; }
+  #case-study .about-desc p {
+    color: #666;
+    line-height: 1.3em; }
+#case-study p.first {
+  margin-bottom: 50px; }
+#case-study .section-title--results {
+  border-bottom: 1px solid #666;
+  padding-bottom: 20px; }
+#case-study #results .results {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 30px 0 10px 0; }
+  #case-study #results .results > div {
+    text-align: center;
+    display: inline-block; }
+    #case-study #results .results > div.col-50 {
+      width: 40%;
+      padding: 4% 4%; }
+    #case-study #results .results > div.col-50:first-child {
+      border-right: 1px solid #666; }
+#case-study .result3 img {
+  width: 50%; }
+#case-study .result2 img {
+  width: 100%; }
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -6013,6 +6065,10 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
       background-image: url(../images/index/new-thumb2.png); }
     .whats-new .new-projects li:nth-of-type(3) .new-project-thumb {
       background-image: url(../images/index/new-thumb3.png); }
+.whats-new .new-project {
+  display: block; }
+  .whats-new .new-project:hover .new-project-title {
+    text-decoration: underline; }
 .whats-new .new-project-thumb {
   background-color: #eee;
   width: 240px;

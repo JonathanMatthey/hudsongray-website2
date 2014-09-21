@@ -3,13 +3,7 @@
 
 <script>
 $(function() {
-  // Trick to make Google Analytics track the PDF downloads
-  $('.ppp-buttons__item__btn').click(function (e) {
-    var _this = this;
-    _gaq.push(['_trackEvent','Download','PDF', this.href]);
-    setTimeout(function(){location.href=_this.href;},1000);
-    return false;
-  });
+
 });
 </script>
 
