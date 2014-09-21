@@ -1596,7 +1596,22 @@ table {
     font-family: "ITCAvantGardeStdBk", "Helvetica", sans-serif;
     font-size: 14px;
     text-transform: uppercase; }
+  @media only screen and (max-width: 480px) {
+    .slide-footer {
+      padding: 5px 20px; }
+      .slide-footer h3 {
+        font-size: 14px; }
+      .slide-footer a {
+        font-size: 12px; } }
 
+@media screen and (max-width: 768px) {
+  .slide-footer h3 {
+    line-height: 1.3em; }
+
+  .new-projects li {
+    margin-bottom: 20px !important; }
+    .new-projects li:last-child {
+      margin-bottom: 0px !important; } }
 .u-bg-piglet {
   background: #ED0082; }
 
@@ -3623,6 +3638,10 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     .block__inner,
     .footer__inner {
       max-width: 1280px; } }
+
+@media only screen and (max-width: 480px) {
+  .block__inner--about-us .hg-logo {
+    display: none; } }
 
 .blog__inner,
 .footer__inner--blog {
@@ -5729,7 +5748,15 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   font-family: "ITCAvantGardeGothicStdBold", "Helvetica", sans-serif;
   color: gray;
   font-weight: normal; }
+  @media only screen and (max-width: 480px) {
+    .section-title__span {
+      font-size: 18px; } }
 
+@media only screen and (max-width: 480px) {
+  .our-thinking .section-title__span {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px; } }
 .forward-slashes {
   color: #cccccc;
   font-size: 38px;
@@ -5971,6 +5998,14 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 #case-study .section-title--results {
   border-bottom: 1px solid #666;
   padding-bottom: 20px; }
+@media only screen and (max-width: 768px) {
+  #case-study .about-img {
+    border-right: none;
+    margin-bottom: 50px;
+    padding: 0px;
+    width: 100%; }
+  #case-study .about-desc {
+    width: 100%; } }
 #case-study #results .results {
   display: inline-block;
   text-align: center;
@@ -5982,6 +6017,11 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     #case-study #results .results > div.col-50 {
       width: 40%;
       padding: 4% 4%; }
+      @media only screen and (max-width: 768px) {
+        #case-study #results .results > div.col-50 {
+          width: 100%;
+          border-right: none !important;
+          padding-bottom: 15%; } }
     #case-study #results .results > div.col-50:first-child {
       border-right: 1px solid #666; }
 #case-study .result3 img {
@@ -6182,8 +6222,8 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 @media only screen and (max-width: 600px) {
   .our-clients .our-clients-board {
     background-image: url(../images/index/client-board-mobile.jpg);
-    width: 320px;
-    height: 1200px; } }
+    width: 280px;
+    height: 900px; } }
 
 .u-bg-diag-grey {
   background-image: url("../images/shared/diaglinepattern-50p.png"); }
@@ -6197,6 +6237,22 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   background-image: url("../images/index/office-new-york.jpg"); }
 .our-offices .chicago .office__map {
   background-image: url("../images/index/office-chicago.jpg"); }
+@media only screen and (max-width: 768px) {
+  .our-offices .new-york .office__map,
+  .our-offices .chicago .office__map {
+    width: 100%;
+    background-position: center center;
+    background-size: auto 105%; }
+  .our-offices .new-york .office__map {
+    background-image: url("../images/index/hg-map-nyc.jpg"); }
+  .our-offices .chicago .office__map {
+    background-image: url("../images/index/hg-map-chi.jpg"); }
+  .our-offices .hg-marker {
+    display: none; }
+  .our-offices .studios__item__details {
+    width: 100% !important;
+    margin-bottom: 30px;
+    height: 200px !important; } }
 .our-offices .hg-marker {
   width: 70px;
   height: 70px;
@@ -6260,6 +6316,10 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
       display: inline-block;
       padding: 10px 30px;
       vertical-align: middle; }
+      @media only screen and (max-width: 768px) {
+        .footer .footer_social-row > div {
+          width: 100%;
+          padding: 30px 30px 0px 30px; } }
       .footer .footer_social-row > div.footer_social strong {
         font-family: "ITCAvantGardeGothicStdBold", "Helvetica", sans-serif;
         font-weight: normal; }
@@ -6269,6 +6329,11 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
           margin: 0px 8px; }
           .footer .footer_social-row > div.footer_social .social__links li:hover {
             background-color: #666; }
+      @media only screen and (max-width: 768px) {
+        .footer .footer_social-row > div.footer_social .social__links__item {
+          float: none;
+          display: inline-block;
+          margin: 0px 3px !important; } }
       .footer .footer_social-row > div.footer_email {
         border-left: 1px solid #ccc;
         padding: 10px 30px 0px; }
@@ -6282,8 +6347,8 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     text-align: center;
     padding: 50px 0; }
     .footer .footer_logo i {
-      width: 80px;
-      height: 80px; }
+      width: 90px;
+      height: 90px; }
   .footer .footer__copyright {
     border-top: 1px solid #999;
     padding: 0; }
@@ -6292,7 +6357,7 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
       padding: 10px 0; }
 
 .hg-logo {
-  background-image: url("../images/index/hg-logo.png");
+  background-image: url("../images/index/hg-logo160.png");
   background-size: cover;
   display: inline-block; }
 
@@ -6303,6 +6368,9 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   padding-bottom: 5px;
   color: #aaa;
   font-weight: bold; }
+  @media only screen and (max-width: 768px) {
+    .header-subtitle {
+      font-size: 12px; } }
 
 #blog {
   background: #F4F4F4; }

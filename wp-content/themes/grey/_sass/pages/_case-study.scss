@@ -43,6 +43,18 @@
     padding-bottom: 20px;
   }
 
+  @media only screen and (max-width: 768px){
+    .about-img{
+      border-right:none;
+      margin-bottom:50px;
+      padding:0px;
+      width:100%;
+    }
+    .about-desc{
+      width:100%;
+    }
+
+  }
 
   #results .results{
     display: inline-block;
@@ -57,6 +69,11 @@
       &.col-50{
         width:40%;
         padding:4% 4%;
+        @media only screen and (max-width: 768px){
+          width:100%;
+          border-right:none!important;
+          padding-bottom: 15%;
+        }
       }
       &.col-50:first-child{
         border-right:1px solid #666;

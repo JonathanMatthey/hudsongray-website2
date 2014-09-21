@@ -153,6 +153,8 @@
     max-width: 1020px;
   }
 
+
+
   @media only screen and (max-width: 1280px){
     max-width: 90%;
   }
@@ -169,6 +171,12 @@
 .block__inner--about-us {
   @extend %u-padding-tL;
   @extend %u-padding-bXl;
+
+  @media only screen and (max-width: 480px){
+    .hg-logo{
+      display:none;
+    }
+  }
 }
 
 .blog__inner,

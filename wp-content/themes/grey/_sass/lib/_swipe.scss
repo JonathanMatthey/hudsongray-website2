@@ -24,10 +24,10 @@
   height:70px;
   z-index: 10;
   -webkit-transform: translateY(-50%);
-     -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-       -o-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 
   @include grid-media-query('upToTablet') {
     display: none;
@@ -59,10 +59,10 @@
   margin: 0 7px;
   background: $nonBlack;
   -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 @each $colour in $colours {
@@ -124,8 +124,8 @@
     top: 15px;
     left: 28px;
     -webkit-transform: rotate(180deg);
-       -moz-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
 
@@ -145,10 +145,10 @@
   left: 50%;
   width: 65%;
   -webkit-transform: translateX(-50%);
-     -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-       -o-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 30;
 
   @include grid-media-query('tablet') {
@@ -168,10 +168,10 @@
   left: 50%;
   width: 50%;
   -webkit-transform: translateX(-50%);
-     -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-       -o-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 30;
 
   @include grid-media-query('tablet') {
@@ -191,10 +191,10 @@
   left: 50%;
   width: 50%;
   -webkit-transform: translateX(-50%);
-     -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-       -o-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 30;
 
   @include grid-media-query('tablet') {
@@ -227,5 +227,27 @@
     font-family:$avantgardebook;
     font-size:14px;
     text-transform:uppercase;
+  }
+  @media only screen and (max-width: 480px){
+    padding: 5px 20px;
+
+    h3{
+      font-size:14px;
+    }
+    a{
+      font-size:12px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide-footer h3{
+    line-height:1.3em;
+  }
+  .new-projects li{
+    margin-bottom:20px!important;
+    &:last-child{
+      margin-bottom:0px!important;
+    }
   }
 }

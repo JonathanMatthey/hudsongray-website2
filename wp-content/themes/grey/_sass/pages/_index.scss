@@ -296,8 +296,8 @@
   @media only screen and (max-width: 600px) {
     .our-clients-board{
       background-image:url(../images/index/client-board-mobile.jpg);
-      width:320px;
-      height:1200px;
+      width:280px;
+      height:900px;
     }
   }
 }
@@ -319,6 +319,31 @@
   .chicago .office__map{
     background-image:url('../images/index/office-chicago.jpg');
   }
+
+  @media only screen and (max-width: 768px){
+    .new-york .office__map,
+    .chicago .office__map{
+      width:100%;
+      background-position:center center;
+      background-size: auto 105%;
+    }
+
+    .new-york .office__map{
+      background-image:url('../images/index/hg-map-nyc.jpg');
+    }
+    .chicago .office__map{
+      background-image:url('../images/index/hg-map-chi.jpg');
+    }
+    .hg-marker{
+      display: none;
+    }
+    .studios__item__details{
+      width:100%!important;
+      margin-bottom:30px;
+      height:200px!important;
+    }
+  }
+
   .hg-marker{
     width:70px;
     height:70px;
@@ -392,6 +417,10 @@
       display: inline-block;
       padding: 10px 30px;
       vertical-align:middle;
+      @media only screen and (max-width: 768px){
+        width:100%;
+        padding: 30px 30px 0px 30px;
+      }
 
       &.footer_social{
 
@@ -411,6 +440,11 @@
           }
         }
         .social__links__item{
+          @media only screen and (max-width: 768px){
+            float:none;
+            display: inline-block;
+            margin: 0px 3px!important;
+          }
         }
       }
 
@@ -433,8 +467,8 @@
     text-align:center;
     padding: 50px 0 ;
     i{
-      width:80px;
-      height:80px;
+      width:90px;
+      height:90px;
     }
   }
   .footer__copyright{
@@ -450,7 +484,7 @@
 
 
 .hg-logo{
-  background-image:url('../images/index/hg-logo.png');
+  background-image:url('../images/index/hg-logo160.png');
   background-size:cover;
   display: inline-block;
 }
@@ -462,6 +496,9 @@
   padding-bottom:5px;
   color:#aaa;
   font-weight:bold;
+  @media only screen and (max-width: 768px){
+    font-size:12px;
+  }
 }
 
 .our-offices{
