@@ -65,10 +65,12 @@ RewriteRule ^(.*) "/grey/wp-content/cache/supercache/%{SERVER_NAME}/grey/$1/inde
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /dev/hudsongray/grey/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /grey/index.php [L]
+RewriteRule . /dev/hudsongray/grey/index.php [L]
 </IfModule>
 
 # END WordPress

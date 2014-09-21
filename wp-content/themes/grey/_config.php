@@ -22,8 +22,6 @@ require_once CLASS_DIR.'class.page.php';
 require_once CLASS_DIR.'class.home.php';
 require_once CLASS_DIR.'class.blog.php';
 require_once CLASS_DIR.'class.single-blog.php';
-
 require_once CLASS_DIR.'class.social-counter.php';
-/* require_once CLASS_DIR.'class.twitter-fetch.php'; */
 
 ?>
