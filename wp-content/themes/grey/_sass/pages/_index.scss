@@ -15,6 +15,12 @@
 }
 
 #index_hero{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
   .block__inner{
     padding:0;
   }
@@ -257,6 +263,10 @@
   }
 }
 
+.block.our-thinking{
+  background-color:#eee;
+}
+
 .our-thinking{
   padding-bottom:10px;
   p{
@@ -303,6 +313,7 @@
 }
 
 .u-bg-diag-grey{
+  background-color: #eee;
   background-image:url('../images/shared/diaglinepattern-50p.png');
 }
 

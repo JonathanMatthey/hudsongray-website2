@@ -5447,6 +5447,9 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 .blog-article__pagination__link--business:first-child:before {
   color: #009CF3; }
 
+.block.about-us {
+  background-color: #eee; }
+
 .about-us__illustrations {
   margin: 50px -20px; }
   .about-us__illustrations:after {
@@ -6045,8 +6048,14 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   zoom: 1; }
 
 /* IE7 */
-#index_hero .block__inner {
-  padding: 0; }
+#index_hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+  #index_hero .block__inner {
+    padding: 0; }
 
 .homepage {
   background: #EEE; }
@@ -6194,6 +6203,9 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   .our-capabilities .capability-row.results i {
     background-image: url(../images/index/c6.png); }
 
+.block.our-thinking {
+  background-color: #eee; }
+
 .our-thinking {
   padding-bottom: 10px; }
   .our-thinking p {
@@ -6226,6 +6238,7 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     height: 900px; } }
 
 .u-bg-diag-grey {
+  background-color: #eee;
   background-image: url("../images/shared/diaglinepattern-50p.png"); }
 
 .our-offices .office__item {

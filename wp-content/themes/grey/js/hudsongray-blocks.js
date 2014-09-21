@@ -34,6 +34,7 @@
         margin: '',
         top: elementOffset
       })
+      $(".nav").css('margin-top',global.dimensions.heightWithOffset -50 );
     }
   }
 
