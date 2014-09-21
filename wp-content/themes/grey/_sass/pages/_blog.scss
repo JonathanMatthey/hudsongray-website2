@@ -311,7 +311,7 @@
     @extend %largePalm--one-whole;
 
     @media only screen and (max-width: 680px) and (min-width: 481px) {
-      @extend %one-whole;
+      // @extend %one-whole;
     }
 
     @media only screen and (max-width: 768px) and (min-width: 681px) {

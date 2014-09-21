@@ -15,7 +15,7 @@
   height: 45px;
   right: 45px;
   width: 100px;
-  margin-top: 10px;
+  margin-top: 12px;
   overflow: hidden;
   text-indent: -1000px;
   background: url(../images/shared/logo@2x.png) center center no-repeat;
@@ -117,19 +117,27 @@
 
 // Tablet Styles
 @include grid-media-query('upToTablet') {
-  .nav { position: fixed; }
-  .nav__toggle { display: block; }
+  // .nav { position: fixed; }
+  // .nav__toggle { display: block; }
 
-  .nav__menu {
-    width: 215px;
-    top: 0;
-    right: -215px;
-    bottom: 0;
-    z-index: 20;
-    color: #FFF;
-    overflow-y: scroll;
-    overflow-x: none;
-    -webkit-overflow-scrolling: touch;
+  // .nav__menu {
+  //   width: 215px;
+  //   top: 0;
+  //   right: -215px;
+  //   bottom: 0;
+  //   z-index: 20;
+  //   color: #FFF;
+  //   overflow-y: scroll;
+  //   overflow-x: none;
+  //   -webkit-overflow-scrolling: touch;
+  // }
+
+  .nav__inner .nav__menu{
+    display: none;
+  }
+
+  .forward-slashes{
+    font-size:14px;
   }
 
   .nav__menu__item {
@@ -245,7 +253,7 @@
   .nav__menu__item {
     display: inline-block;
     height: 68px;
-    line-height: 68px;
+    line-height: 73px;
     margin: 0 20px;
 
     .link__desc { display: none; }

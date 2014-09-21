@@ -34,8 +34,8 @@
   padding-top: 20px;
 
   @include grid-media-query('upToTablet') {
-    padding-top: 40px;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
 
     &:after {
       display: none;
@@ -73,4 +73,14 @@
   letter-spacing: -7px;
   margin-right: 3px;
 
+}
+
+@include grid-media-query('upToTablet') {
+  .swipe-pagination--work{
+    display: none;
+  }
+
+  .forward-slashes{
+    font-size: 25px;
+  }
 }
