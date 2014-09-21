@@ -3,7 +3,7 @@ var Ustwo = {};
 // Set Dimensions object
 Ustwo.dimensions = {
   height: $(window).height(),
-  heightWithOffset: $(window).height() - 68,
+  heightWithOffset: $(window).height() / 2,
   width: $(window).width()
 }
 
@@ -34,7 +34,7 @@ Ustwo.breakpoints = {
 $(window).bind('resize', function(event) {
   Ustwo.dimensions = {
     height: $(window).height(),
-    heightWithOffset: $(window).height() - 68,
+    heightWithOffset: $(window).height() / 2,
     width: $(window).width()
   }
 });
@@ -53,7 +53,7 @@ for (var breakpointName in Ustwo.breakpoints) {
     responseBreakpoints.push(breakpoint.width[0]);
   }
 }
-Response.create({ 
+Response.create({
     prop: "width",
     breakpoints: responseBreakpoints
 });

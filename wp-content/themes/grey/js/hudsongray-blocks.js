@@ -10,7 +10,7 @@
   }
 
   Blocks.prototype.initialize = function initialize() {
-    this.$blockTitles.fitText(1.1);
+    this.$blockTitles.fitText(1.4);
     return this;
   }
 
@@ -19,7 +19,7 @@
         $elementChild = $element.find('.block__inner'),
         elementOffset;
 
-    if (global.dimensions.heightWithOffset < $elementChild.outerHeight() + 100) {
+    if (global.dimensions.heightWithOffset < $elementChild.outerHeight() + 50) {
       $elementChild
         .css('height', '')
         .css('top', '')
