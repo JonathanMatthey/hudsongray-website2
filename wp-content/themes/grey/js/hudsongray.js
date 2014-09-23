@@ -3,7 +3,7 @@ var Ustwo = {};
 // Set Dimensions object
 Ustwo.dimensions = {
   height: $(window).height(),
-  heightWithOffset: $(window).height() / 2,
+  heightWithOffset: $(window).height() / 1.8,
   width: $(window).width()
 }
 

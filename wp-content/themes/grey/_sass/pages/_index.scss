@@ -24,6 +24,26 @@
   .block__inner{
     padding:0;
   }
+  @media only screen and (min-width: 1024px){
+    .block__inner, .footer__inner {
+      max-width: 920px;
+    }
+  }
+  @media only screen and (min-width: 1280px){
+    .block__inner, .footer__inner {
+      max-width: 1200px;
+    }
+  }
+  @media only screen and (min-width: 1460px){
+    .block__inner, .footer__inner {
+      max-width: 1400px;
+    }
+  }
+  @media only screen and (min-width: 1650px){
+    .block__inner, .footer__inner {
+      max-width: 1600px;
+    }
+  }
 }
 
 .homepage {

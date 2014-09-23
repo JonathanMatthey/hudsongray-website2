@@ -10,7 +10,7 @@
   }
 
   Blocks.prototype.initialize = function initialize() {
-    this.$blockTitles.fitText(1.4);
+    this.$blockTitles.fitText(1.8);
     return this;
   }
 
@@ -34,7 +34,7 @@
         margin: '',
         top: elementOffset
       })
-      $(".nav").css('margin-top',global.dimensions.heightWithOffset -50 );
+      $(".nav").css('margin-top',global.dimensions.heightWithOffset - 0 );
     }
   }
 

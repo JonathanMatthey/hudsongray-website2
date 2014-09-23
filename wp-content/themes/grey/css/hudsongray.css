@@ -6056,6 +6056,18 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   z-index: -1; }
   #index_hero .block__inner {
     padding: 0; }
+  @media only screen and (min-width: 1024px) {
+    #index_hero .block__inner, #index_hero .footer__inner {
+      max-width: 920px; } }
+  @media only screen and (min-width: 1280px) {
+    #index_hero .block__inner, #index_hero .footer__inner {
+      max-width: 1200px; } }
+  @media only screen and (min-width: 1460px) {
+    #index_hero .block__inner, #index_hero .footer__inner {
+      max-width: 1400px; } }
+  @media only screen and (min-width: 1650px) {
+    #index_hero .block__inner, #index_hero .footer__inner {
+      max-width: 1600px; } }
 
 .homepage {
   background: #EEE; }
