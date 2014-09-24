@@ -153,6 +153,10 @@
       event.preventDefault();
       twitterSwipe.next();
     });
+
+    $("#index .swipe-wrap > div").click(function(e){
+      window.location = $(this).find('.view-project').attr('href');
+    });
   })();
 </script>
 </body>
