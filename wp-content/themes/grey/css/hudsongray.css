@@ -5974,6 +5974,8 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   padding-bottom: 0; }
   #case-study .section-title .section-title__span {
     padding: 10px 10px 0 10px; }
+#case-study .swipe-controls__wrapper {
+  bottom: -42px; }
 #case-study .block__inner--about-project {
   padding: 50px 0; }
   #case-study .block__inner--about-project > div {
