@@ -164,6 +164,16 @@
       var src = $(this).siblings('.case-study-video').attr('data-src');
       $(this).siblings('.case-study-video').fadeIn(300).css({'z-index':9}).attr('src',src);
     });
+
+    $(window).resize(function(e){
+      console.log('a');
+      if(($("#index_hero_bg").width()/$("#index_hero_bg").height()) < 3.18){
+        $("#index_hero #index_hero_bg").css('background-size',"auto 100%");
+      } else {
+        $("#index_hero #index_hero_bg").css('background-size',"100% auto");
+      }
+    });
+    $(window).resize();
   })();
 </script>
 </body>
