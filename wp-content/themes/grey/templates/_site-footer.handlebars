@@ -157,6 +157,13 @@
     $("#index .swipe-wrap > div").click(function(e){
       window.location = $(this).find('.view-project').attr('href');
     });
+
+    $(".play-overlay").click(function(e){
+      $(this).fadeOut(300);
+      $(this).siblings('img').css({'opacity':0,'z-index':-1});
+      var src = $(this).siblings('.case-study-video').attr('data-src');
+      $(this).siblings('.case-study-video').fadeIn(300).css({'z-index':9}).attr('src',src);
+    });
   })();
 </script>
 </body>

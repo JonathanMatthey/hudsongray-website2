@@ -5985,7 +5985,8 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
 #case-study .about-img {
   width: 69%;
   border-right: 1px solid #666;
-  padding-right: 10px; }
+  padding-right: 10px;
+  position: relative; }
   #case-study .about-img img {
     width: 100%; }
 #case-study .about-desc {
@@ -6033,6 +6034,33 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
   width: 50%; }
 #case-study .result2 img {
   width: 100%; }
+#case-study .case-study-video-wrapper {
+  position: relative; }
+#case-study .case-study-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 00px;
+  bottom: 0;
+  margin-right: 10px;
+  display: none;
+  z-index: -1; }
+
+.play-overlay {
+  background-position: center center;
+  cursor: pointer;
+  width: 100%;
+  background-image: url(../images/shared/btn-play.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 10px;
+  background-size: 150px; }
+
+html {
+  overflow: visible; }
 
 .clearfix:after {
   visibility: hidden;

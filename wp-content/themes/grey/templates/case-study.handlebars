@@ -162,13 +162,21 @@
         <div class="block__inner block__inner--about-project">
           <div class="about-img">
             {{#if isCS1}}
-            <img src="{{urls.images}}/case-study/cs1-about-img.jpg"/>
+            <div class="case-study-video-wrapper">
+              <div class="play-overlay"></div>
+              <img class="case-study-video-first-frame" src="{{urls.images}}/case-study/cs1-about-img.jpg"/>
+              <iframe class="case-study-video" src="//player.vimeo.com/video/102642401" data-src="//player.vimeo.com/video/102642401" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
             {{/if}}
             {{#if isCS2}}
             <img src="{{urls.images}}/case-study/cs2-about-img.jpg"/>
             {{/if}}
             {{#if isCS3}}
-            <img src="{{urls.images}}/case-study/cs3-about-img.jpg"/>
+            <div class="case-study-video-wrapper">
+              <div class="play-overlay"></div>
+              <img class="case-study-video-first-frame" src="{{urls.images}}/case-study/cs3-about-img.jpg"/>
+              <iframe class="case-study-video" width="100%" height="100%" frameborder="0" scrolling="no" src="http://player.theplatform.com/p/OyMl-B/oIChOKSBFJ6b/select/Wajrj92Gucz8&usa_t=embed?autoPlay=false" data-src="http://player.theplatform.com/p/OyMl-B/oIChOKSBFJ6b/select/Wajrj92Gucz8&usa_t=embed"></iframe>
+            </div>
             {{/if}}
           </div>
           <div class="about-desc">
