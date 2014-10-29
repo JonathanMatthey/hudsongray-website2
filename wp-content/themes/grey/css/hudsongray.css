@@ -6294,7 +6294,7 @@ html {
   .our-clients .our-clients-board {
     background-image: url(../images/index/client-board-mobile.jpg);
     width: 280px;
-    height: 900px; } }
+    height: 600px; } }
 
 .u-bg-diag-grey {
   background-color: #eee;
@@ -6545,6 +6545,9 @@ html {
   line-height: 16px;
   margin-left: 180px; }
 
+@media only screen and (max-width: 960px) {
+  .btn-see-more {
+    display: none; } }
 .arrow-right {
   width: 0;
   height: 0;

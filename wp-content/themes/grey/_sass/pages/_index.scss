@@ -350,7 +350,7 @@ html{
     .our-clients-board{
       background-image:url(../images/index/client-board-mobile.jpg);
       width:280px;
-      height:900px;
+      height:600px;
     }
   }
 }
@@ -648,6 +648,12 @@ html{
   top: 20px;
   line-height: 16px;
   margin-left: 180px;
+}
+
+@media only screen and (max-width: 960px){
+  .btn-see-more{
+    display: none;
+  }
 }
 
 .arrow-right {
