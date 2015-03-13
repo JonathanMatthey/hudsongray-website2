@@ -6031,7 +6031,8 @@ p, .p, .blog-article__content ul li, .blog-article__content ol li {
     #case-study #results .results > div.col-50:first-child {
       border-right: 1px solid #666; }
 #case-study .result3 img {
-  width: 50%; }
+  width: 40%;
+  margin-left: -15%; }
 #case-study .result3b img {
   width: 80%; }
 #case-study .result2 img {

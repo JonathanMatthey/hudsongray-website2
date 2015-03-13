@@ -18,9 +18,7 @@
 <div class="block block--touch about-us u-bg-lightergrey u-bg-diag-grey">
   <div class="block__inner block__inner--about-us clearfix">
     <span class="hg-logo"></span>
-    <p><span class="hg-name">HudsonGray</span> is a full service creative marketing and branding agency.
-      We create seamless strategic marketing campaigns
-      that leverage the power of your brand narrative and encourage audience growth in the new brand era.
+    <p><span class="hg-name">HudsonGray</span> {{companyDescription}}
     </p>
   </div>
 </div>
@@ -87,7 +85,7 @@
   <div class="block__inner block__inner--whats-new">
     <div class="section-title">
       <span class="forward-slashes">//</span><span class="section-title__span">What's New</span><span class="forward-slashes">//</span>
-      <a class="btn-see-more">see more<span class="arrow-right"></span></a>
+      <a class="btn-see-more" target="_blank" href="http://hudsongray.tumblr.com/">see more<span class="arrow-right"></span></a>
     </div>
     <ul class="new-projects">
       <li>
@@ -131,78 +129,55 @@
     <div class="capability-row strategy">
       <div class="capability-icon"><i></i><div class="icon-title">Strategy</div></div>
       <div class="capability-desc1">
-        Learn about you, to develop a map for us.
+        {{whatWeDo1-tagline}}
       </div>
       <div class="capability-desc2">
-        brand briefing, research, pilot viewing, script reading, product sampling, competitive analysis, trend assessment, feasibility
+        {{whatWeDo1-keywords}}
       </div>
     </div>
     <div class="capability-row creative">
       <div class="capability-icon"><i></i><div class="icon-title">Creative</div></div>
       <div class="capability-desc1">
-        Craft original concepts
-        that capture the essence of
-        your brand.
+        {{whatWeDo2-tagline}}
       </div>
       <div class="capability-desc2">
-        corporate & visual identity, conceptual creative,
-        graphic design and branding, 3D visualization,
-        event design, branded content, video design
-        and production        </div>
+        {{whatWeDo2-keywords}}
+      </div>
       </div>
       <div class="capability-row production">
         <div class="capability-icon"><i></i><div class="icon-title">Production</div></div>
         <div class="capability-desc1">
-          Nail the details to bring your
-          vision to life.        </div>
+        {{whatWeDo3-tagline}}
+        </div>
           <div class="capability-desc2">
-            budget management, venue research and
-            site inspections, procurement and contract
-            management, talent buying and management,
-            geographic production planning, operations
-            and logistics management, onsite coordination
-            and management, post program assessment
-            and services
+        {{whatWeDo3-keywords}}
           </div>
         </div>
         <div class="capability-row marketing">
           <div class="capability-icon"><i></i><div class="icon-title">Marketing</div></div>
           <div class="capability-desc1">
-            Keep your campaign
-            streamlined and seamless with
-            our multi-platform experience.
+        {{whatWeDo4-tagline}}
           </div>
           <div class="capability-desc2">
-            events, branded environments, pop ups,
-            mobile tours, road shows, guerrilla stunts,
-            mobile engagement tools, websites, microsites,
-            brand and sponsorship activations, conferences
-            and branded collateral
+        {{whatWeDo4-keywords}}
           </div>
         </div>
         <div class="capability-row digital-and-interactive">
           <div class="capability-icon"><i></i><div class="icon-title">Digital</div></div>
           <div class="capability-desc1">
-            Utilize the latest in experiential
-            and digital platforms for an
-            integrated approach.
+        {{whatWeDo5-tagline}}
           </div>
           <div class="capability-desc2">
-            interactive walls, robotics, gestural media,
-            mobile app development, iBeacons, NFC,
-            photo/video engagements, aurasma, augmented
-            reality, interactive registration, live streams and
-            web series
+        {{whatWeDo5-keywords}}
           </div>
         </div>
         <div class="capability-row results">
           <div class="capability-icon"><i></i><div class="icon-title">Results</div></div>
           <div class="capability-desc1">
-            Deliver a truly measurable
-            product to ensure you hit
-            your target.
+        {{whatWeDo6-tagline}}
           </div>
           <div class="capability-desc2">
+        {{whatWeDo6-keywords}}
           </div>
         </div>
       </div>
@@ -243,7 +218,7 @@
     <!-- /Brand Board -->
 
     <!-- our-offices -->
-    <div id="our-offices" class="block block--touch our-offices u-bg-diag-grey">
+    <div id="our-offices" class="block  our-offices u-bg-diag-grey">
       <div class="block__inner block__inner--our-offices clearfix">
         <div class="section-title section-title--our-offices section-title--transparent">
           <span class="section-title__span">get in touch</span>
@@ -259,7 +234,10 @@
                 <span class="region">SUITE 601</span>
                 <br />
                 <span class="country-name">New York, NY 10013</span>
-                <a target="_blank" class="maps__link u-link-block u-margin-tS" href="">Google Map</a>
+                <br />
+                <span class="telephone">646.838.8500
+                </span>
+                <a target="_blank" class="maps__link u-link-block u-margin-tS" href="https://www.google.com/maps/place/333+Hudson+St,+New+York,+NY+10013,+USA/@40.7271799,-74.0077521,15z/data=!4m2!3m1!1s0x89c259f2c3492669:0x414254d9df8e955c?sa=X&ei=SbNTVK2NLebU7AaE7IDQCg&ved=0CCAQ8gEwAA">Google Map</a>
               </p>
             </div>
           </div>
@@ -276,7 +254,10 @@
                 <br />
                 <span class="country-name">Chicago, IL 60611
                 </span>
-                <a target="_blank" class="maps__link u-link-block u-margin-tS" href="">Google Map</a>
+                <br />
+                <span class="telephone">312.404.4654
+                </span>
+                <a target="_blank" class="maps__link u-link-block u-margin-tS" href="https://www.google.com/maps/place/875+N+Michigan+Ave,+Chicago,+IL+60611,+USA/@41.8986422,-87.6227578,15z/data=!4m2!3m1!1s0x880fd35472b79b8d:0x537e8342ee35cdb2?sa=X&ei=WLNTVIS8FKjG7AazioG4CQ&ved=0CCUQ8gEwAQ">Google Map</a>
               </p>
             </div>
           </div>
