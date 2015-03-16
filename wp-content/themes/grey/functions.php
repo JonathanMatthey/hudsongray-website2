@@ -9,6 +9,7 @@ define("CACHEDIR", "cache/");
 //how many posts (projekt) in portfolio
 define("POSTS_PER_PAGE", "9");
 
+/*
 
 
 // VACANCIES
@@ -25,39 +26,41 @@ function create_vacancies() {
     )
   );
 }
+*/
 
 global $vacanciesMeta;
 $vacanciesMeta = array();
-$vacanciesMeta['job_title']		= array( 'Job Title', 'input' );
-$vacanciesMeta['description']	= array( 'Description', 'tinymce' );
-$vacanciesMeta['excerpt']		= array( 'Excerpt', 'textarea' );
-$vacanciesMeta['job_level']		= array( 'Level', 'input' );
-$vacanciesMeta['job_salary']	= array( 'Salary', 'input' );
-$vacanciesMeta['job_benefits']	= array( 'Benefits', 'input' );
-$vacanciesMeta['job_holidays']	= array( 'Holidays', 'input' );
+$vacanciesMeta['job_title']   = array( 'Job Title', 'input' );
+$vacanciesMeta['description'] = array( 'Description', 'tinymce' );
+$vacanciesMeta['excerpt']   = array( 'Excerpt', 'textarea' );
+$vacanciesMeta['job_level']   = array( 'Level', 'input' );
+$vacanciesMeta['job_salary']  = array( 'Salary', 'input' );
+$vacanciesMeta['job_benefits']  = array( 'Benefits', 'input' );
+$vacanciesMeta['job_holidays']  = array( 'Holidays', 'input' );
 $vacanciesMeta['job_closing_date'] = array( 'Closing Date For Applications', 'input' );
-$vacanciesMeta['experience']	= array( 'Experience &amp; Skills', 'tinymce' );
-$vacanciesMeta['project']	= array( 'Project &amp; Team Management', 'tinymce' );
-$vacanciesMeta['tools']	= array( 'The tools we use', 'tinymce' );
-$vacanciesMeta['character']	= array( 'Character requirements', 'tinymce' );
-$vacanciesMeta['qualifications']	= array( 'Qualifications', 'tinymce' );
+$vacanciesMeta['experience']  = array( 'Experience &amp; Skills', 'tinymce' );
+$vacanciesMeta['project'] = array( 'Project &amp; Team Management', 'tinymce' );
+$vacanciesMeta['tools'] = array( 'The tools we use', 'tinymce' );
+$vacanciesMeta['character'] = array( 'Character requirements', 'tinymce' );
+$vacanciesMeta['qualifications']  = array( 'Qualifications', 'tinymce' );
 
 
 global $pressMeta;
 $pressMeta = array();
-$pressMeta['pdf']	= array( 'External URL', 'input' );
-$pressMeta['image']	= array( 'Image', 'input' );
+$pressMeta['pdf'] = array( 'External URL', 'input' );
+$pressMeta['image'] = array( 'Image', 'input' );
 
 global $postMeta;
 $postMeta = array();
-$postMeta['excerpt_title']	= array( 'Title Excerpt', 'input', 'high' );
-$postMeta['thumbnail']	= array( 'Thumbnail   ( 100 x 100 )', 'input', 'high' );
-$postMeta['homepage_thumbnail']	= array( 'Homepage Thumbnail   ( 285 x 180 )', 'input', 'high' );
+$postMeta['excerpt_title']  = array( 'Title Excerpt', 'input', 'high' );
+$postMeta['thumbnail']  = array( 'Thumbnail   ( 100 x 100 )', 'input', 'high' );
+$postMeta['homepage_thumbnail'] = array( 'Homepage Thumbnail   ( 285 x 180 )', 'input', 'high' );
 
 global $blogMeta;
 $blogMeta = array();
 
 
+/*
 
 // FEATURES
 add_action( 'init', 'create_features' );
@@ -77,9 +80,9 @@ function create_features() {
 // CASE STUDIES
 add_action( 'init', 'create_casestudies' );
 function create_casestudies() {
-	   register_taxonomy( 'case_category', 'case_study', array( 'show_in_nav_menus'=>true, 'show_ui'=>true, 'public'=>true, 'show_tagcloud' => true, 'hierarchical' => true, 'label' => 'Platforms', 'query_var' => true, 'rewrite' => true ) );
-	   register_taxonomy( 'case_role', 'case_study', array( 'show_in_nav_menus'=>true, 'show_ui'=>true, 'public'=>true, 'show_tagcloud' => true, 'hierarchical' => true, 'label' => 'Roles', 'query_var' => true, 'rewrite' => true ) );
-	register_post_type( 'case_study',
+     register_taxonomy( 'case_category', 'case_study', array( 'show_in_nav_menus'=>true, 'show_ui'=>true, 'public'=>true, 'show_tagcloud' => true, 'hierarchical' => true, 'label' => 'Platforms', 'query_var' => true, 'rewrite' => true ) );
+     register_taxonomy( 'case_role', 'case_study', array( 'show_in_nav_menus'=>true, 'show_ui'=>true, 'public'=>true, 'show_tagcloud' => true, 'hierarchical' => true, 'label' => 'Roles', 'query_var' => true, 'rewrite' => true ) );
+  register_post_type( 'case_study',
     array(
       'labels' => array(
         'name' => __( 'Case Studies' ),
@@ -119,15 +122,16 @@ function create_blog() {
       ),
       'public' => true,
       "supports" => array("title", "editor", "author", "excerpt", "trackbacks", "comments", "revisions", "thumbnail"),
-	  'taxonomies' => array('blog_taxonomy', 'blog_category')
+    'taxonomies' => array('blog_taxonomy', 'blog_category')
     )
   );
 }
+*/
 
 add_action( 'init', 'create_blog_taxonomies' );
 function create_blog_taxonomies() {
-	register_taxonomy( 'blog_category', 'blog', array( 'hierarchical' => true, 'label' => 'Categories' ) );
-	register_taxonomy( 'blog_taxonomy', 'blog', array( 'hierarchical' => false, 'label' => 'Blog tags' ) );
+  register_taxonomy( 'blog_category', 'blog', array( 'hierarchical' => true, 'label' => 'Categories' ) );
+  register_taxonomy( 'blog_taxonomy', 'blog', array( 'hierarchical' => false, 'label' => 'Blog tags' ) );
 }
 
 add_rewrite_rule( '^davide', 'index.php?pagename=blog&paged=2', 'top');
@@ -140,20 +144,20 @@ add_action( 'wp_loaded','blog_flush_rules' );
 
 // flush_rules() if our rules are not yet included
 function blog_flush_rules(){
-	$rules = get_option( 'rewrite_rules' );
+  $rules = get_option( 'rewrite_rules' );
 
-	if ( ! isset( $rules['blog/page/([0-9]+)'] ) ) {
-		global $wp_rewrite;
-	   	$wp_rewrite->flush_rules();
-	}
+  if ( ! isset( $rules['blog/page/([0-9]+)'] ) ) {
+    global $wp_rewrite;
+      $wp_rewrite->flush_rules();
+  }
 }
 
 // Adding a new rule
 function blog_rewrite_rules( $rules )
 {
-	$newrules = array();
-	$newrules['blog/page/([0-9]+)'] = 'index.php?pagename=blog&paged=$matches[1]';
-	return $newrules + $rules;
+  $newrules = array();
+  $newrules['blog/page/([0-9]+)'] = 'index.php?pagename=blog&paged=$matches[1]';
+  return $newrules + $rules;
 }
 
 // Adding the id var so that WP recognizes it
@@ -192,44 +196,61 @@ add_action("save_post", "save_post");
 
 function edit_post_custompost( $postID ) {
 
-	// Avoid adding post types if not in edit post page
-	if ( $_GET['action'] != 'edit' ) return;
+  // Avoid adding post types if not in edit post page
+  if ( $_GET['action'] != 'edit' ) return;
 
-	wp_enqueue_script( 'tiny_mce' );
+  wp_enqueue_script( 'tiny_mce' );
 
-	$postTypes = array(
-		'vacancy' => 'vacanciesMeta',
-		'press' => 'pressMeta',
-		'post' => 'postMeta',
-		'blog' => 'blogMeta'
-	);
+  $postTypes = array(
+    'vacancy' => 'vacanciesMeta',
+    'press' => 'pressMeta',
+    'post' => 'postMeta',
+    'blog' => 'blogMeta'
+  );
 
-	init_tinymce_metaboxes( $postTypes );
+  init_tinymce_metaboxes( $postTypes );
 }
 
 function admin_init(){
-	$postTypes = array(
-		'vacancy' => 'vacanciesMeta',
-		'press' => 'pressMeta',
-		'post' => 'postMeta',
-		'blog' => 'blogMeta'
-	);
+  $postTypes = array(
+    'vacancy' => 'vacanciesMeta',
+    'press' => 'pressMeta',
+    'post' => 'postMeta',
+    'blog' => 'blogMeta'
+  );
 
-	foreach ( $postTypes as $postType => $meta )
-	{
-		global $$meta;
+  foreach ( $postTypes as $postType => $meta )
+  {
+    global $$meta;
 
-		foreach  ( $$meta as $id => $properties )
-		{
-			$label = $properties[0];
-			$type = $properties[1];
-			$priority = isset( $properties[2] )? $properties[2]: 'low';
+    foreach  ( $$meta as $id => $properties )
+    {
+      $label = $properties[0];
+      $type = $properties[1];
+      $priority = isset( $properties[2] )? $properties[2]: 'low';
 
-			add_meta_box("{$postType}_{$id}", $label, "render_metabox_options", $postType, "normal", $priority, compact( 'id', 'label', 'type' ) );
-		}
-	}
+      add_meta_box("{$postType}_{$id}", $label, "render_metabox_options", $postType, "normal", $priority, compact( 'id', 'label', 'type' ) );
+    }
+  }
+  add_meta_box("page_slide1_image_url", "Slide 1 Image URL", "page_slide1_image_url_options", "page", "normal", "low");
+  add_meta_box("page_slide1_title", "Slide 1 Title", "page_slide1_title_options", "page", "normal", "low");
+  add_meta_box("page_slide1_subtitle", "Slide 1 Subtitle", "page_slide1_subtitle_options", "page", "normal", "low");
 
+  add_meta_box("page_slide2_image_url", "Slide 2 Image URL", "page_slide2_image_url_options", "page", "normal", "low");
+  add_meta_box("page_slide2_title", "Slide 2 Title", "page_slide2_title_options", "page", "normal", "low");
+  add_meta_box("page_slide2_subtitle", "Slide 2 Subtitle", "page_slide2_subtitle_options", "page", "normal", "low");
 
+  add_meta_box("page_slide3_image_url", "Slide 3 Image URL", "page_slide3_image_url_options", "page", "normal", "low");
+  add_meta_box("page_slide3_title", "Slide 3 Title", "page_slide3_title_options", "page", "normal", "low");
+  add_meta_box("page_slide3_subtitle", "Slide 3 Subtitle", "page_slide3_subtitle_options", "page", "normal", "low");
+
+  add_meta_box("page_slide4_image_url", "Slide 4 Image URL", "page_slide4_image_url_options", "page", "normal", "low");
+  add_meta_box("page_slide4_title", "Slide 4 Title", "page_slide4_title_options", "page", "normal", "low");
+  add_meta_box("page_slide4_subtitle", "Slide 4 Subtitle", "page_slide4_subtitle_options", "page", "normal", "low");
+
+  add_meta_box("page_objective_text", "Objective Text", "page_objective_text_options", "page", "normal", "low");
+  add_meta_box("page_strategy_text", "Strategy Text", "page_strategy_text_options", "page", "normal", "low");
+  add_meta_box("page_results_image_url", "Results Image URL", "page_results_image_url_options", "page", "normal", "low");
 
   add_meta_box("casestudies_url", "Image URL", "casestudies_url_options", "case_study", "normal", "low");
   add_meta_box("casestudies_client", "Client", "casestudies_client_options", "case_study", "normal", "low");
@@ -246,6 +267,8 @@ function admin_init(){
   add_meta_box("event_time", "Time", "event_time_options", "event", "normal", "low");
   add_meta_box("event_location", "Location", "event_location_options", "event", "normal", "low");
   add_meta_box("event_url", "URL", "event_url_options", "event", "normal", "low");
+  
+  
 }
 
 function casestudies_url_options(){
@@ -257,18 +280,150 @@ function casestudies_url_options(){
 <script type="text/javascript" src="<?= bloginfo('template_directory'); ?>/js/ckeditor/ckeditor.js"></script>
 <script>
 window.addEvent('domready', function(){
-	var editor = CKEDITOR.replace('ckeditor');
-	$$('.mini_img').addEvent('click', function(e){
-		e.stop();
-		editor.openDialog('image');
-		id = e.target.id.split('_');
-		objectId = id[2];
-	});
+  var editor = CKEDITOR.replace('ckeditor');
+  $$('.mini_img').addEvent('click', function(e){
+    e.stop();
+    editor.openDialog('image');
+    id = e.target.id.split('_');
+    objectId = id[2];
+  });
 });
 </script>
 <div style="display:none;"><textarea id="ckeditor"></textarea></div>
 
 <label>Image url:</label><br /><a id="object_link_url" class="mini_img" href="#" style="background:url(<?= bloginfo('template_directory'); ?>/js/ckeditor/skins/kama/icons.png);width:17px; height:17px;float:right;text-indent:-15000px;background-position: 0 -575px;">add</a><input id="casestudies_obj_url" name="casestudies_url" value="<?php echo $url; ?>" style="width:88%" />
+<?
+}
+
+function page_slide1_image_url_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide1_image_url"][0];
+?>
+<input name="page_slide1_image_url" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+function page_slide1_title_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide1_title"][0];
+?>
+<input name="page_slide1_title" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+function page_slide1_subtitle_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide1_subtitle"][0];
+?>
+<input name="page_slide1_subtitle" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+
+function page_slide2_image_url_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide2_image_url"][0];
+?>
+<input name="page_slide2_image_url" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+function page_slide2_title_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide2_title"][0];
+?>
+<input name="page_slide2_title" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+function page_slide2_subtitle_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide2_subtitle"][0];
+?>
+<input name="page_slide2_subtitle" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+
+
+function page_slide3_image_url_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide3_image_url"][0];
+?>
+<input name="page_slide3_image_url" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+function page_slide3_title_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide3_title"][0];
+?>
+<input name="page_slide3_title" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+function page_slide3_subtitle_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide3_subtitle"][0];
+?>
+<input name="page_slide3_subtitle" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+
+
+function page_slide4_image_url_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide4_image_url"][0];
+?>
+<input name="page_slide4_image_url" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+function page_slide4_title_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide4_title"][0];
+?>
+<input name="page_slide4_title" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+function page_slide4_subtitle_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_slide4_subtitle"][0];
+?>
+<input name="page_slide4_subtitle" value="<?php echo $val; ?>" style="width:95%" />
+<?
+}
+
+
+
+function page_strategy_text_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_strategy_text"][0];
+?>
+<textarea name="page_strategy_text" style="width:100%;min-height:150px;"><?php echo $val; ?></textarea> 
+<?
+}
+
+function page_objective_text_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_objective_text"][0];
+?>
+<textarea name="page_objective_text" style="width:100%;min-height:150px;"><?php echo $val; ?></textarea> 
+<?
+}
+
+function page_results_image_url_options(){
+  global $post;
+  $custom = get_post_custom($post->ID);
+  $val = $custom["page_results_image_url"][0];
+?>
+<input name="page_results_image_url" value="<?php echo $val; ?>" style="width:95%" />
+
 <?
 }
 
@@ -338,68 +493,68 @@ function press_pdf_options(){
 
 function init_tinymce_metaboxes( $postTypes )
 {
-	$ids = array();
+  $ids = array();
 
-	foreach ( $postTypes as $type => $meta )
-	{
-		global $$meta;
+  foreach ( $postTypes as $type => $meta )
+  {
+    global $$meta;
 
-		foreach ( $$meta as $id => $properties )
-		{
-			if ( $properties[1] == 'tinymce' )
-			{
-				$ids[] = 'customEditor-'.$type.'_'.$id;
-			}
-		}
-	}
+    foreach ( $$meta as $id => $properties )
+    {
+      if ( $properties[1] == 'tinymce' )
+      {
+        $ids[] = 'customEditor-'.$type.'_'.$id;
+      }
+    }
+  }
 
-	if (function_exists('wp_tiny_mce'))
-		wp_tiny_mce(false, array(
-			'mode' => 'exact',
-			'elements' => implode( ', ', $ids ),
-			'height' => 200,
-			'plugins' => 'inlinepopups,wpdialogs,wplink,media,wpeditimage,wpgallery,paste,tabfocus',
-			'forced_root_block' => false,
-			'force_br_newlines' => true,
-			'force_p_newlines' => false,
-			'convert_newlines_to_brs' => true
-	));
+  if (function_exists('wp_tiny_mce'))
+    wp_tiny_mce(false, array(
+      'mode' => 'exact',
+      'elements' => implode( ', ', $ids ),
+      'height' => 200,
+      'plugins' => 'inlinepopups,wpdialogs,wplink,media,wpeditimage,wpgallery,paste,tabfocus',
+      'forced_root_block' => false,
+      'force_br_newlines' => true,
+      'force_p_newlines' => false,
+      'convert_newlines_to_brs' => true
+  ));
 }
 
 function render_metabox_options( $post, $properties )
 {
-	static $multiMceLoaded = false;
+  static $multiMceLoaded = false;
 
-	extract( $properties['args'] );
+  extract( $properties['args'] );
 
-	$name = $properties['id'];
+  $name = $properties['id'];
 
-	$custom = get_post_custom($post->ID);
-	$value = $custom[$name][0];
+  $custom = get_post_custom($post->ID);
+  $value = $custom[$name][0];
 
-	switch ( $type )
-	{
-		case 'input':
-		default:
+  switch ( $type )
+  {
+    case 'input':
+    default:
 ?>
 <input name="<? echo $name; ?>" value="<?php echo $value; ?>" style="width:95%" />
 <?
-		break;
+    break;
 
-		case 'tinymce':
-			$id = "customEditor-$name";
+    case 'tinymce':
+      $id = "customEditor-$name";
 ?>
 
 <div class="customEditor"><textarea id="<? echo $id; ?>" name="<? echo $name; ?>" style="width:95%"><?php echo $value; ?></textarea></div>
 <?
-		break;
+    break;
 
-		case 'textarea':
+    case 'textarea':
 ?>
 <textarea name="<? echo $name; ?>" style="width:95%"><?php echo $value; ?></textarea>
 <?
-		break;
-	}
+    break;
+  }
 }
 
 function event_location_options(){
@@ -439,28 +594,28 @@ function event_url_options(){
 }
 
 function savePostType( $postType, $meta )
-				{
+        {
   global $post;
 
   foreach ( $meta as $id => $properties )
   {
-	  $fieldName = "{$postType}_{$id}";
-	  update_post_meta($post->ID, $fieldName, $_POST[$fieldName]);
+    $fieldName = "{$postType}_{$id}";
+    update_post_meta($post->ID, $fieldName, $_POST[$fieldName]);
   }
 }
 
 function save_vacancy()
 {
-	global $vacanciesMeta;
+  global $vacanciesMeta;
 
-	// http://wordpress.stackexchange.com/questions/37967/custom-field-being-erased-after-autosave
+  // http://wordpress.stackexchange.com/questions/37967/custom-field-being-erased-after-autosave
     // Stop WP from clearing custom fields on autosave,
     // and also during ajax requests (e.g. quick edit) and bulk edits.
     if ((defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) || (defined('DOING_AJAX') && DOING_AJAX) || isset($_REQUEST['bulk_edit']))
         return;
 
 
-	savePostType( 'vacancy', $vacanciesMeta );
+  savePostType( 'vacancy', $vacanciesMeta );
 }
 
 // Custom feature stuff
@@ -481,13 +636,13 @@ function feature_banner_image_options(){
 <script type="text/javascript" src="<?= bloginfo('template_directory'); ?>/js/ckeditor/ckeditor.js"></script>
 <script>
 window.addEvent('domready', function(){
-	var editor = CKEDITOR.replace('ckeditor');
-	$$('.mini_img').addEvent('click', function(e){
-		e.stop();
-		editor.openDialog('image');
-		id = e.target.id.split('_');
-		objectId = id[2];
-	});
+  var editor = CKEDITOR.replace('ckeditor');
+  $$('.mini_img').addEvent('click', function(e){
+    e.stop();
+    editor.openDialog('image');
+    id = e.target.id.split('_');
+    objectId = id[2];
+  });
 });
 </script>
 <div style="display:none;"><textarea id="ckeditor"></textarea></div>
@@ -504,6 +659,29 @@ function save_feature(){
 
 function save_casestudies(){
   global $post;
+  update_post_meta($post->ID, "page_slide1_image_url", $_POST["page_slide1_image_url"]);
+  update_post_meta($post->ID, "page_slide1_title", $_POST["page_slide1_title"]);
+  update_post_meta($post->ID, "page_slide1_subtitle", $_POST["page_slide1_subtitle"]);
+  
+  update_post_meta($post->ID, "page_slide2_image_url", $_POST["page_slide2_image_url"]);
+  update_post_meta($post->ID, "page_slide2_title", $_POST["page_slide2_title"]);
+  update_post_meta($post->ID, "page_slide2_subtitle", $_POST["page_slide2_subtitle"]);
+  
+  update_post_meta($post->ID, "page_slide3_image_url", $_POST["page_slide3_image_url"]);
+  update_post_meta($post->ID, "page_slide3_title", $_POST["page_slide3_title"]);
+  update_post_meta($post->ID, "page_slide3_subtitle", $_POST["page_slide3_subtitle"]);
+  
+  update_post_meta($post->ID, "page_slide4_image_url", $_POST["page_slide4_image_url"]);
+  update_post_meta($post->ID, "page_slide4_title", $_POST["page_slide4_title"]);
+  update_post_meta($post->ID, "page_slide4_subtitle", $_POST["page_slide4_subtitle"]);
+  
+  
+  update_post_meta($post->ID, "page_objective_text", $_POST["page_objective_text"]);
+  update_post_meta($post->ID, "page_strategy_text", $_POST["page_strategy_text"]);
+  update_post_meta($post->ID, "page_results_image_url", $_POST["page_results_image_url"]);
+  
+  
+  
   update_post_meta($post->ID, "casestudies_url", $_POST["casestudies_url"]);
   update_post_meta($post->ID, "casestudies_client", $_POST["casestudies_client"]);
   update_post_meta($post->ID, "casestudies_website", $_POST["casestudies_website"]);
@@ -519,20 +697,20 @@ function save_casestudies(){
 }
 
 function save_press(){
-	global $pressMeta;
+  global $pressMeta;
 
-	savePostType( 'press', $pressMeta );
+  savePostType( 'press', $pressMeta );
 }
 
 function save_post(){
-	// verify if this is an auto save routine.
-	// If it is our form has not been submitted, so we dont want to do anything
-	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
-	  return;
+  // verify if this is an auto save routine.
+  // If it is our form has not been submitted, so we dont want to do anything
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+    return;
 
-	global $postMeta;
+  global $postMeta;
 
-	savePostType( 'post', $postMeta );
+  savePostType( 'post', $postMeta );
 }
 
 
@@ -566,71 +744,71 @@ function build_taxonomies() {
 
 
 function ustwo_widgets_init() {
-	// Area 1, located at the top of the sidebar.
-	register_sidebar( array(
-		'name' => __( 'Primary Widget Area', 'ustwo' ),
-		'id' => 'primary-widget-area',
-		'description' => __( 'The primary widget area', 'ustwo' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
+  // Area 1, located at the top of the sidebar.
+  register_sidebar( array(
+    'name' => __( 'Primary Widget Area', 'ustwo' ),
+    'id' => 'primary-widget-area',
+    'description' => __( 'The primary widget area', 'ustwo' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</li>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
 
-	// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Secondary Widget Area', 'ustwo' ),
-		'id' => 'secondary-widget-area',
-		'description' => __( 'The secondary widget area', 'ustwo' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
+  // Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
+  register_sidebar( array(
+    'name' => __( 'Secondary Widget Area', 'ustwo' ),
+    'id' => 'secondary-widget-area',
+    'description' => __( 'The secondary widget area', 'ustwo' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</li>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
 
-	// Area 3, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'First Footer Widget Area', 'ustwo' ),
-		'id' => 'first-footer-widget-area',
-		'description' => __( 'The first footer widget area', 'ustwo' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
+  // Area 3, located in the footer. Empty by default.
+  register_sidebar( array(
+    'name' => __( 'First Footer Widget Area', 'ustwo' ),
+    'id' => 'first-footer-widget-area',
+    'description' => __( 'The first footer widget area', 'ustwo' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</li>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
 
-	// Area 4, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Second Footer Widget Area', 'ustwo' ),
-		'id' => 'second-footer-widget-area',
-		'description' => __( 'The second footer widget area', 'ustwo' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
+  // Area 4, located in the footer. Empty by default.
+  register_sidebar( array(
+    'name' => __( 'Second Footer Widget Area', 'ustwo' ),
+    'id' => 'second-footer-widget-area',
+    'description' => __( 'The second footer widget area', 'ustwo' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</li>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
 
-	// Area 5, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Third Footer Widget Area', 'ustwo' ),
-		'id' => 'third-footer-widget-area',
-		'description' => __( 'The third footer widget area', 'ustwo' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
+  // Area 5, located in the footer. Empty by default.
+  register_sidebar( array(
+    'name' => __( 'Third Footer Widget Area', 'ustwo' ),
+    'id' => 'third-footer-widget-area',
+    'description' => __( 'The third footer widget area', 'ustwo' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</li>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
 
-	// Area 6, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Fourth Footer Widget Area', 'ustwo' ),
-		'id' => 'fourth-footer-widget-area',
-		'description' => __( 'The fourth footer widget area', 'ustwo' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
+  // Area 6, located in the footer. Empty by default.
+  register_sidebar( array(
+    'name' => __( 'Fourth Footer Widget Area', 'ustwo' ),
+    'id' => 'fourth-footer-widget-area',
+    'description' => __( 'The fourth footer widget area', 'ustwo' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => '</li>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
 }
 /** Register sidebars by running ustwo_widgets_init() on the widgets_init hook. */
 add_action( 'widgets_init', 'ustwo_widgets_init' );
